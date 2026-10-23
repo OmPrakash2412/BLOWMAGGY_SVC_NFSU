@@ -64,6 +64,20 @@
   transition: color var(--duration-fast);
 }
 .footer-links a:hover { color: var(--text-primary); }
+.creator-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+.creator-link:hover {
+  color: var(--accent-magenta) !important;
+  transform: translateX(3px);
+}
+.creator-icon {
+  font-size: 0.9rem;
+}
 .footer-bottom {
   margin-top: var(--space-2xl);
   padding-top: var(--space-lg);

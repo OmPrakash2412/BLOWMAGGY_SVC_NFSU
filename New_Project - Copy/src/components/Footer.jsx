@@ -45,12 +45,30 @@ export default function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4>Built With</h4>
+          <h4>Built By</h4>
           <ul>
-            <li>React + Vite</li>
-            <li>React Router</li>
-            <li>Vanilla CSS</li>
-            <li>Context API</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/om-prakash-3286a8389?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="creator-link"
+                title="Om Prakash LinkedIn Profile"
+              >
+                <span className="creator-icon">👔</span> Om Prakash
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/raju-ranjan-925233391?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="creator-link"
+                title="Raju Ranjan LinkedIn Profile"
+              >
+                <span className="creator-icon">👔</span> Raju Ranjan
+              </a>
+            </li>
           </ul>
         </div>
       </div>
