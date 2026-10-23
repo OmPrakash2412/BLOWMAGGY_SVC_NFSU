@@ -75,11 +75,21 @@ app.use((err, req, res, next) => {
 
 // Start server if run directly
 if (process.argv[1]?.endsWith('index.js')) {
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`=======================================================`);
     console.log(`🚀 BLOWMAGGY Backend running on http://localhost:${PORT}`);
     console.log(`   Health check: http://localhost:${PORT}/api/health`);
     console.log(`=======================================================`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.error(`\n❌ [PORT ERROR] Port ${PORT} is already in use by another process.`);
+      console.error(`   Please stop the existing server or terminate the process on port ${PORT}.\n`);
+    } else {
+      console.error('\n❌ [SERVER ERROR]', err);
+    }
+    process.exit(1);
   });
 }
 

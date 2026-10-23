@@ -1,0 +1,11 @@
+{
+  "name": "blowmaggy-workspace",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm run install:app",
+    "install:app": "npm --prefix \"New_Project - Copy\" install",
+    "dev": "npm --prefix \"New_Project - Copy\" run dev",
+    "build": "npm --prefix \"New_Project - Copy\" run build",
+    "server": "npm --prefix \"New_Project - Copy\" run server"
+  }
+}

@@ -1785,6 +1785,20 @@
   "reviews": [],
   "auditLogs": [
     {
+      "id": "aud_1792774083166_hco3o",
+      "userId": "usr_admin_001",
+      "userRole": "STORE_ADMIN",
+      "action": "USER_LOGIN_SUCCESS",
+      "entity": "Session",
+      "entityId": "usr_admin_001",
+      "details": {
+        "role": "STORE_ADMIN",
+        "assignedDepartments": []
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T16:48:03.166Z"
+    },
+    {
       "id": "aud_1792755580154_yrbc5",
       "userId": "usr_deactivated_001",
       "userRole": "SHOPPER",
