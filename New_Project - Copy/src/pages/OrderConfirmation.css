@@ -78,9 +78,9 @@
 }
 
 .delivery-eta-banner {
-  background: rgba(6, 214, 214, 0.08);
-  border: 1px solid rgba(6, 214, 214, 0.3);
-  color: var(--accent-cyan-soft);
+  background: rgba(99, 135, 125, 0.09);
+  border: 1px solid rgba(99, 135, 125, 0.24);
+  color: var(--accent-cyan);
   padding: 10px 20px;
   border-radius: var(--radius-md);
   font-size: var(--fs-sm);
@@ -121,7 +121,7 @@
   display: inline-block;
   font-size: 9px;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(126, 92, 76, 0.08);
   padding: 2px 6px;
   border-radius: 4px;
   margin-right: 6px;

@@ -127,7 +127,7 @@
 
 .payment-card.active {
   border-color: var(--accent-cyan);
-  background: rgba(6, 214, 214, 0.05);
+  background: rgba(99, 135, 125, 0.07);
 }
 
 .pay-icon {

@@ -44,7 +44,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <div className="product-detail-page animate-fade-in" style={{ '--dept-color': dept?.color || '#8b5cf6' }}>
+    <div className="product-detail-page animate-fade-in" style={{ '--dept-color': dept?.color || '#95818b' }}>
       {/* Breadcrumbs */}
       <div className="container breadcrumb-row">
         <Link to="/">Multiverse</Link> <span>/</span>

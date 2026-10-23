@@ -27,7 +27,7 @@
 .hero-title {
   font-size: var(--fs-hero);
   font-weight: 900;
-  letter-spacing: -1.5px;
+  letter-spacing: 0;
   line-height: 1.08;
 }
 
@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(169, 83, 105, 0.3);
 }
 
 .hero-orbit-dot {
@@ -65,7 +65,7 @@
   height: 8px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  box-shadow: 0 0 10px var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(99, 135, 125, 0.35);
 }
 
 .hero-stats-grid {
@@ -88,7 +88,7 @@
 .hero-stat strong {
   font-size: var(--fs-lg);
   font-weight: 800;
-  color: var(--accent-cyan);
+  color: var(--accent-magenta);
 }
 
 .hero-stat span {
@@ -186,7 +186,7 @@
 .dept-count-badge {
   font-size: 11px;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(126, 92, 76, 0.08);
   padding: 4px 10px;
   border-radius: var(--radius-full);
   color: var(--text-secondary);
@@ -239,8 +239,8 @@
   grid-template-columns: 1.2fr 0.8fr;
   gap: var(--space-3xl);
   align-items: center;
-  border-color: rgba(139, 92, 246, 0.3);
-  background: linear-gradient(135deg, rgba(22, 22, 34, 0.9) 0%, rgba(30, 20, 45, 0.9) 100%);
+  border-color: rgba(169, 83, 105, 0.22);
+  background: linear-gradient(135deg, #fffaf6 0%, #f3e8e1 100%);
 }
 
 .orbit-banner-left {
@@ -269,16 +269,16 @@
 .sample-tag {
   font-size: var(--fs-xs);
   padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(126, 92, 76, 0.05);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
   cursor: pointer;
-  color: var(--accent-cyan);
+  color: var(--accent-magenta);
   transition: all 0.2s;
 }
 
 .sample-tag:hover {
-  background: rgba(6, 214, 214, 0.15);
+  background: rgba(99, 135, 125, 0.12);
   border-color: var(--accent-cyan);
 }
 

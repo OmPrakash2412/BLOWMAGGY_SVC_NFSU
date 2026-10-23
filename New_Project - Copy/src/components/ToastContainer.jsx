@@ -23,7 +23,7 @@ function Toast({ toast, onDismiss }) {
   const typeStyles = {
     success: { bg: 'rgba(52, 211, 153, 0.15)', border: '#34d399', icon: '✓' },
     error: { bg: 'rgba(239, 68, 68, 0.15)', border: '#ef4444', icon: '✕' },
-    info: { bg: 'rgba(139, 92, 246, 0.15)', border: '#8b5cf6', icon: 'ℹ' },
+    info: { bg: 'rgba(139, 112, 125, 0.13)', border: '#8b707d', icon: 'ℹ' },
     warning: { bg: 'rgba(251, 191, 36, 0.15)', border: '#fbbf24', icon: '⚠' },
   };
   const style = typeStyles[toast.type] || typeStyles.info;

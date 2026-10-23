@@ -10,20 +10,20 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #e91e8c 0%, #8b5cf6 50%, #06d6d6 100%);
+  background: var(--gradient-hero);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: var(--z-orbit);
   border: none;
-  box-shadow: 0 4px 25px rgba(233, 30, 140, 0.4), 0 0 15px rgba(6, 214, 214, 0.3);
+  box-shadow: var(--shadow-glow-magenta);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
 }
 
 .orbit-fab:hover {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 6px 35px rgba(233, 30, 140, 0.6), 0 0 25px rgba(6, 214, 214, 0.5);
+  box-shadow: var(--shadow-glow-magenta);
 }
 
 .orbit-fab.active {
@@ -47,7 +47,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border: 1px dashed rgba(255, 250, 246, 0.6);
 }
 
 .orbit-fab-ring.ring-1 {
@@ -57,7 +57,7 @@
 .orbit-fab-ring.ring-2 {
   inset: -6px;
   border-style: dotted;
-  border-color: rgba(6, 214, 214, 0.6);
+  border-color: rgba(99, 135, 125, 0.55);
   animation: orbit-spin 20s linear infinite reverse;
 }
 
@@ -89,7 +89,7 @@
 .orbit-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(10, 10, 18, 0.75);
+  background: rgba(56, 45, 42, 0.28);
   backdrop-filter: blur(8px);
   z-index: var(--z-modal);
   display: flex;
@@ -108,7 +108,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(139, 92, 246, 0.2);
+  box-shadow: -10px 0 40px rgba(84, 57, 46, 0.16), var(--shadow-glow-violet);
 }
 
 /* Header */
@@ -189,7 +189,7 @@
 .orbit-tab.active {
   color: var(--accent-cyan);
   border-bottom-color: var(--accent-cyan);
-  background: rgba(6, 214, 214, 0.05);
+  background: rgba(99, 135, 125, 0.07);
 }
 
 /* Content Container */
@@ -230,8 +230,8 @@
 }
 
 .orbit-bubble.user {
-  background: linear-gradient(135deg, rgba(233, 30, 140, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
-  border: 1px solid rgba(233, 30, 140, 0.3);
+  background: linear-gradient(135deg, rgba(196, 123, 137, 0.17) 0%, rgba(150, 116, 94, 0.12) 100%);
+  border: 1px solid rgba(169, 83, 105, 0.22);
   color: var(--text-primary);
   align-self: flex-end;
   border-bottom-right-radius: 2px;
@@ -296,7 +296,7 @@
 .preset-card:hover {
   border-color: var(--accent-cyan);
   transform: translateY(-2px);
-  background: rgba(6, 214, 214, 0.05);
+  background: rgba(99, 135, 125, 0.07);
 }
 
 .preset-card-top {
@@ -383,7 +383,7 @@
 .dept-tag-btn.active {
   border-color: var(--dept-color);
   color: var(--dept-color);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(126, 92, 76, 0.07);
   font-weight: 700;
 }
 
@@ -459,7 +459,7 @@
   text-transform: uppercase;
   padding: 2px 6px;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(126, 92, 76, 0.08);
   color: var(--text-secondary);
 }
 

@@ -27,7 +27,7 @@ export default function ProductCard({ product, showDepartment = false }) {
     <article className="product-card glass-card animate-fade-in" data-department={product.department}>
       <Link to={`/product/${product.id}`} className="product-card-link" aria-label={`View ${product.name}`}>
         {/* Image placeholder with department color */}
-        <div className="product-card-image" style={{ '--dept-color': dept?.color || '#8b5cf6' }}>
+        <div className="product-card-image" style={{ '--dept-color': dept?.color || '#95818b' }}>
           <div className="product-card-visual">
             <span className="product-emoji">{dept?.icon || '📦'}</span>
             <span className="product-initial">{product.name.charAt(0)}</span>
