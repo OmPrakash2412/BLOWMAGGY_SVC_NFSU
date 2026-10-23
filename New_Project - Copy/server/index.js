@@ -37,8 +37,8 @@ app.use((req, res, next) => {
   next();
 });
 
-// Health check endpoint
-app.get('/api/health', (req, res) => {
+// Health check endpoint (both /api/health and /health)
+const healthHandler = (req, res) => {
   res.json({
     status: 'ONLINE',
     system: 'BLOWMAGGY Multiverse Backend',
@@ -47,22 +47,21 @@ app.get('/api/health', (req, res) => {
     catalogSize: db.products.findMany().length,
     usersCount: db.users.findMany().length
   });
-});
+};
+app.get('/api/health', healthHandler);
+app.get('/health', healthHandler);
 
-// Mount modular API routers
+// Mount modular API routers with and without /api prefix
 app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 app.use('/api/products', productRoutes);
+app.use('/products', productRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/orders', orderRoutes);
 app.use('/api/manager', managerRoutes);
+app.use('/manager', managerRoutes);
 app.use('/api/admin', adminRoutes);
-
-// Global 404 handler for unmatched API routes
-app.use('/api', (req, res) => {
-  res.status(404).json({
-    error: 'NOT_FOUND',
-    message: `API route '${req.method} ${req.originalUrl}' does not exist.`
-  });
-});
+app.use('/admin', adminRoutes);
 
 // Global error handling middleware (Never leak stack traces in response!)
 app.use((err, req, res, next) => {

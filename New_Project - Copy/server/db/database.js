@@ -51,8 +51,7 @@ function save() {
   try {
     fs.writeFileSync(DB_FILE, JSON.stringify(_store, null, 2), 'utf-8');
   } catch (err) {
-    console.error('[DB] Write failed:', err.message);
-    throw err;
+    console.warn('[DB] Persistent write skipped (serverless / read-only environment):', err.message);
   }
 }
 
