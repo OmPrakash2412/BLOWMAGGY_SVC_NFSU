@@ -1,0 +1,2099 @@
+{
+  "users": [
+    {
+      "id": "usr_shopper_001",
+      "email": "shopper@blowmaggy.com",
+      "passwordHash": "$2b$10$cAJw7NXgiKgobiolEjw/7u4pYEAvlb2p.q.0XdZwgaRKOPIAFWp/y",
+      "fullName": "Aarav Mehta (Student Shopper)",
+      "role": "SHOPPER",
+      "status": "ACTIVE",
+      "createdAt": "2026-10-23T11:39:39.125Z"
+    },
+    {
+      "id": "usr_mgr_fashion_001",
+      "email": "manager.fashion@blowmaggy.com",
+      "passwordHash": "$2b$10$cAJw7NXgiKgobiolEjw/7uaYO5u7Ht1N6bi.e1fIwdmdyvCNJVdsq",
+      "fullName": "Elena Rostova (Fashion Dept Manager)",
+      "role": "DEPARTMENT_MANAGER",
+      "status": "ACTIVE",
+      "createdAt": "2026-10-23T11:39:39.127Z"
+    },
+    {
+      "id": "usr_mgr_tech_001",
+      "email": "manager.electronics@blowmaggy.com",
+      "passwordHash": "$2b$10$cAJw7NXgiKgobiolEjw/7uaYO5u7Ht1N6bi.e1fIwdmdyvCNJVdsq",
+      "fullName": "Devansh Roy (Tech Dept Manager)",
+      "role": "DEPARTMENT_MANAGER",
+      "status": "ACTIVE",
+      "createdAt": "2026-10-23T11:39:39.128Z"
+    },
+    {
+      "id": "usr_admin_001",
+      "email": "admin@blowmaggy.com",
+      "passwordHash": "$2b$10$cAJw7NXgiKgobiolEjw/7ujYM08b6JEcUL65Ryjvv8K0vipSOJojS",
+      "fullName": "Sunita Rao (Store Director & Platform Admin)",
+      "role": "STORE_ADMIN",
+      "status": "ACTIVE",
+      "createdAt": "2026-10-23T11:39:39.129Z"
+    },
+    {
+      "id": "usr_deactivated_001",
+      "email": "deactivated@blowmaggy.com",
+      "passwordHash": "$2b$10$cAJw7NXgiKgobiolEjw/7u05/70PZ/Idu1h5AmPUMGTU4d7rz603S",
+      "fullName": "Suspended Account",
+      "role": "SHOPPER",
+      "status": "DEACTIVATED",
+      "createdAt": "2026-10-23T11:39:39.130Z"
+    },
+    {
+      "id": "usr_1792755580067_aa7jf",
+      "email": "shopper.b@blowmaggy.com",
+      "passwordHash": "$2b$10$dNsiCYOid4MWb7f6Mjq3F.LGwvHlL3GiRteJZXLA8UrBeAmad0F3K",
+      "fullName": "Shopper B",
+      "role": "SHOPPER",
+      "status": "ACTIVE",
+      "createdAt": "2026-10-23T11:39:40.067Z"
+    }
+  ],
+  "departments": [
+    {
+      "id": "fashion",
+      "name": "The Runway",
+      "subtitle": "Fashion",
+      "tagline": "Style has no boundaries",
+      "color": "#e91e8c",
+      "icon": "👗"
+    },
+    {
+      "id": "beauty",
+      "name": "The Lab",
+      "subtitle": "Beauty",
+      "tagline": "Science meets glow",
+      "color": "#f472b6",
+      "icon": "✨"
+    },
+    {
+      "id": "electronics",
+      "name": "The Grid",
+      "subtitle": "Electronics",
+      "tagline": "Power your world",
+      "color": "#06d6d6",
+      "icon": "⚡"
+    },
+    {
+      "id": "home",
+      "name": "The Sanctuary",
+      "subtitle": "Home",
+      "tagline": "Design your peace",
+      "color": "#a78bfa",
+      "icon": "🏡"
+    },
+    {
+      "id": "grocery",
+      "name": "The Dailyverse",
+      "subtitle": "Grocery",
+      "tagline": "Fresh. Fast. Real.",
+      "color": "#34d399",
+      "icon": "🥑"
+    },
+    {
+      "id": "kids",
+      "name": "The Wonderland",
+      "subtitle": "Kids",
+      "tagline": "Where imagination shops",
+      "color": "#fbbf24",
+      "icon": "🧸"
+    }
+  ],
+  "departmentManagerAssignments": [
+    {
+      "id": "dma_001",
+      "userId": "usr_mgr_fashion_001",
+      "departmentId": "fashion",
+      "assignedAt": "2026-10-23T11:39:39.132Z",
+      "assignedBy": "usr_admin_001"
+    },
+    {
+      "id": "dma_002",
+      "userId": "usr_mgr_tech_001",
+      "departmentId": "electronics",
+      "assignedAt": "2026-10-23T11:39:39.133Z",
+      "assignedBy": "usr_admin_001"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_001",
+      "departmentId": "fashion",
+      "category": "T-Shirts",
+      "name": "Midnight Gradient Oversized Tee",
+      "pricePaise": 129900,
+      "originalPricePaise": null,
+      "description": "Premium cotton oversized tee with holographic gradient print. Unisex fit.",
+      "rating": 4.6,
+      "reviewCount": 342,
+      "inStock": true,
+      "stockCount": 49,
+      "badge": "Trending",
+      "featured": true
+    },
+    {
+      "id": "prod_002",
+      "departmentId": "fashion",
+      "category": "T-Shirts",
+      "name": "Neon Pulse Acid Wash Tee",
+      "pricePaise": 99900,
+      "originalPricePaise": null,
+      "description": "Acid wash cotton tee with neon pulse graphic. Streetwear essential.",
+      "rating": 4.3,
+      "reviewCount": 197,
+      "inStock": true,
+      "stockCount": 19,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_003",
+      "departmentId": "fashion",
+      "category": "T-Shirts",
+      "name": "Classic White Essential Tee",
+      "pricePaise": 69900,
+      "originalPricePaise": null,
+      "description": "Your everyday essential. 100% organic Supima cotton, pre-washed.",
+      "rating": 3.5815623402891474,
+      "reviewCount": 29,
+      "inStock": true,
+      "stockCount": 21,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_004",
+      "departmentId": "fashion",
+      "category": "Jeans",
+      "name": "Dark Nebula Slim Fit Jeans",
+      "pricePaise": 249900,
+      "originalPricePaise": null,
+      "description": "Indigo stretch denim with whisker detailing. Comfort meets style.",
+      "rating": 4.5,
+      "reviewCount": 202,
+      "inStock": true,
+      "stockCount": 37,
+      "badge": "Best Seller",
+      "featured": true
+    },
+    {
+      "id": "prod_005",
+      "departmentId": "fashion",
+      "category": "Jeans",
+      "name": "Washed Blue Relaxed Fit Jeans",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "Classic blue wash relaxed fit. Weekend-ready comfort denim.",
+      "rating": 4.451863220235943,
+      "reviewCount": 124,
+      "inStock": true,
+      "stockCount": 22,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_006",
+      "departmentId": "fashion",
+      "category": "Dresses",
+      "name": "Cosmic Shimmer Midi Dress",
+      "pricePaise": 349900,
+      "originalPricePaise": null,
+      "description": "Iridescent shimmer midi dress with asymmetric hem. Party-ready.",
+      "rating": 4.7,
+      "reviewCount": 125,
+      "inStock": true,
+      "stockCount": 5,
+      "badge": "New",
+      "featured": true
+    },
+    {
+      "id": "prod_007",
+      "departmentId": "fashion",
+      "category": "Dresses",
+      "name": "Emerald Wrap Dress",
+      "pricePaise": 279900,
+      "originalPricePaise": null,
+      "description": "Elegant emerald wrap dress in flowing georgette.",
+      "rating": 4.212717278907994,
+      "reviewCount": 107,
+      "inStock": true,
+      "stockCount": 41,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_008",
+      "departmentId": "fashion",
+      "category": "Sneakers",
+      "name": "Void Runner Pro Sneakers",
+      "pricePaise": 499900,
+      "originalPricePaise": 599900,
+      "description": "Lightweight mesh running sneakers with reactive foam. All-day comfort.",
+      "rating": 4.8,
+      "reviewCount": 518,
+      "inStock": true,
+      "stockCount": 43,
+      "badge": "17% Off",
+      "featured": true
+    },
+    {
+      "id": "prod_009",
+      "departmentId": "fashion",
+      "category": "Sneakers",
+      "name": "Urban Drift High Tops",
+      "pricePaise": 399900,
+      "originalPricePaise": null,
+      "description": "Canvas high-tops with chunky soles and street art detailing.",
+      "rating": 4.135503483041666,
+      "reviewCount": 86,
+      "inStock": true,
+      "stockCount": 17,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_010",
+      "departmentId": "fashion",
+      "category": "Jackets",
+      "name": "Stealth Bomber Jacket",
+      "pricePaise": 449900,
+      "originalPricePaise": null,
+      "description": "Matte black bomber with ribbed cuffs and satin lining.",
+      "rating": 4.4,
+      "reviewCount": 165,
+      "inStock": true,
+      "stockCount": 35,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_011",
+      "departmentId": "fashion",
+      "category": "Jackets",
+      "name": "Denim Trucker Jacket",
+      "pricePaise": 349900,
+      "originalPricePaise": null,
+      "description": "Vintage-washed denim trucker. Sherpa-lined for cold weather.",
+      "rating": 4.889787443893171,
+      "reviewCount": 168,
+      "inStock": true,
+      "stockCount": 37,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_012",
+      "departmentId": "fashion",
+      "category": "Accessories",
+      "name": "Titanium Chain Necklace",
+      "pricePaise": 149900,
+      "originalPricePaise": null,
+      "description": "Minimalist titanium chain. Hypoallergenic, tarnish-resistant.",
+      "rating": 4.617541279706984,
+      "reviewCount": 88,
+      "inStock": true,
+      "stockCount": 35,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_013",
+      "departmentId": "fashion",
+      "category": "Accessories",
+      "name": "Leather Crossbody Bag",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "Compact leather crossbody with magnetic closure and card slots.",
+      "rating": 4.2,
+      "reviewCount": 127,
+      "inStock": true,
+      "stockCount": 18,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_014",
+      "departmentId": "beauty",
+      "category": "Skincare",
+      "name": "Hyaluronic Acid Serum 30ml",
+      "pricePaise": 89900,
+      "originalPricePaise": null,
+      "description": "Triple-weight hyaluronic acid serum for deep hydration. Glass dropper bottle.",
+      "rating": 4.8,
+      "reviewCount": 892,
+      "inStock": true,
+      "stockCount": 22,
+      "badge": "Best Seller",
+      "featured": true
+    },
+    {
+      "id": "prod_015",
+      "departmentId": "beauty",
+      "category": "Skincare",
+      "name": "Vitamin C Glow Moisturizer",
+      "pricePaise": 129900,
+      "originalPricePaise": null,
+      "description": "15% Vitamin C with niacinamide. Brightens and protects.",
+      "rating": 4.6,
+      "reviewCount": 167,
+      "inStock": true,
+      "stockCount": 41,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_016",
+      "departmentId": "beauty",
+      "category": "Skincare",
+      "name": "Retinol Night Repair Cream",
+      "pricePaise": 149900,
+      "originalPricePaise": null,
+      "description": "0.5% encapsulated retinol. Reduces fine lines while you sleep.",
+      "rating": 4.5,
+      "reviewCount": 23,
+      "inStock": true,
+      "stockCount": 27,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_017",
+      "departmentId": "beauty",
+      "category": "Skincare",
+      "name": "SPF 50 Invisible Sunscreen",
+      "pricePaise": 79900,
+      "originalPricePaise": null,
+      "description": "Lightweight, no white cast SPF 50 PA++++. Daily essential.",
+      "rating": 4.7,
+      "reviewCount": 63,
+      "inStock": true,
+      "stockCount": 38,
+      "badge": "Essential",
+      "featured": false
+    },
+    {
+      "id": "prod_018",
+      "departmentId": "beauty",
+      "category": "Makeup",
+      "name": "Velvet Matte Lipstick — Crimson",
+      "pricePaise": 59900,
+      "originalPricePaise": null,
+      "description": "Long-lasting velvet matte formula in deep crimson. Transfer-proof.",
+      "rating": 4.5,
+      "reviewCount": 169,
+      "inStock": true,
+      "stockCount": 24,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_019",
+      "departmentId": "beauty",
+      "category": "Makeup",
+      "name": "24H Full Coverage Foundation",
+      "pricePaise": 119900,
+      "originalPricePaise": null,
+      "description": "Buildable coverage with skin-like finish. 30 shade range.",
+      "rating": 4.494098724208141,
+      "reviewCount": 21,
+      "inStock": true,
+      "stockCount": 10,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_020",
+      "departmentId": "beauty",
+      "category": "Makeup",
+      "name": "Volumizing Mascara — Blackout",
+      "pricePaise": 49900,
+      "originalPricePaise": null,
+      "description": "Dramatic volume without clumps. Waterproof formula.",
+      "rating": 3.7541016179557474,
+      "reviewCount": 19,
+      "inStock": true,
+      "stockCount": 42,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_021",
+      "departmentId": "beauty",
+      "category": "Haircare",
+      "name": "Keratin Repair Shampoo 300ml",
+      "pricePaise": 69900,
+      "originalPricePaise": null,
+      "description": "Sulphate-free keratin-infused shampoo. Repairs damaged hair.",
+      "rating": 3.5339679758927995,
+      "reviewCount": 152,
+      "inStock": true,
+      "stockCount": 50,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_022",
+      "departmentId": "beauty",
+      "category": "Haircare",
+      "name": "Argan Oil Hair Serum 100ml",
+      "pricePaise": 89900,
+      "originalPricePaise": null,
+      "description": "Pure argan oil serum for frizz control and shine.",
+      "rating": 4.6,
+      "reviewCount": 25,
+      "inStock": true,
+      "stockCount": 43,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_023",
+      "departmentId": "beauty",
+      "category": "Fragrances",
+      "name": "Oud Noir Eau de Parfum 50ml",
+      "pricePaise": 299900,
+      "originalPricePaise": null,
+      "description": "Luxurious oud-based fragrance with amber and sandalwood.",
+      "rating": 4.9,
+      "reviewCount": 156,
+      "inStock": true,
+      "stockCount": 52,
+      "badge": "Luxury",
+      "featured": true
+    },
+    {
+      "id": "prod_024",
+      "departmentId": "beauty",
+      "category": "Tools",
+      "name": "Jade Roller & Gua Sha Set",
+      "pricePaise": 49900,
+      "originalPricePaise": null,
+      "description": "Authentic jade roller with gua sha tool. Reduces puffiness.",
+      "rating": 3.7716106988894587,
+      "reviewCount": 101,
+      "inStock": true,
+      "stockCount": 16,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_025",
+      "departmentId": "beauty",
+      "category": "Sets",
+      "name": "Complete Glow Kit",
+      "pricePaise": 199900,
+      "originalPricePaise": 279900,
+      "description": "Serum + Moisturizer + SPF + Mask. Your complete routine.",
+      "rating": 4.68907788857981,
+      "reviewCount": 22,
+      "inStock": true,
+      "stockCount": 45,
+      "badge": "29% Off",
+      "featured": false
+    },
+    {
+      "id": "prod_026",
+      "departmentId": "electronics",
+      "category": "Smartphones",
+      "name": "NovaPro X1 5G — 128GB",
+      "pricePaise": 2499900,
+      "originalPricePaise": null,
+      "description": "6.7\" AMOLED 120Hz, Dimensity 9200, 50MP triple camera, 5000mAh.",
+      "rating": 4.6,
+      "reviewCount": 1204,
+      "inStock": true,
+      "stockCount": 30,
+      "badge": "Flagship",
+      "featured": true
+    },
+    {
+      "id": "prod_027",
+      "departmentId": "electronics",
+      "category": "Smartphones",
+      "name": "Pixel Lite A2 — 64GB",
+      "pricePaise": 1299900,
+      "originalPricePaise": null,
+      "description": "6.4\" OLED, clean Android, 48MP camera, 4500mAh. Budget powerhouse.",
+      "rating": 4.4,
+      "reviewCount": 190,
+      "inStock": true,
+      "stockCount": 32,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_028",
+      "departmentId": "electronics",
+      "category": "Laptops",
+      "name": "ThinkForce Ultra 14\" — i7/16GB/512GB",
+      "pricePaise": 7999900,
+      "originalPricePaise": null,
+      "description": "14\" 2.8K IPS, Intel i7-13700H, 16GB DDR5, 512GB NVMe, 72Wh battery.",
+      "rating": 4.7,
+      "reviewCount": 389,
+      "inStock": true,
+      "stockCount": 45,
+      "badge": "Editor's Pick",
+      "featured": true
+    },
+    {
+      "id": "prod_029",
+      "departmentId": "electronics",
+      "category": "Laptops",
+      "name": "Creator Studio 16\" — Ryzen 9",
+      "pricePaise": 12999900,
+      "originalPricePaise": null,
+      "description": "16\" 4K OLED, Ryzen 9, 32GB, 1TB, RTX 4060. Creative professional.",
+      "rating": 4.8,
+      "reviewCount": 84,
+      "inStock": true,
+      "stockCount": 38,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_030",
+      "departmentId": "electronics",
+      "category": "Audio",
+      "name": "AuraPods Pro — ANC TWS",
+      "pricePaise": 699900,
+      "originalPricePaise": null,
+      "description": "Active noise cancellation, spatial audio, 30hr battery with case.",
+      "rating": 4.5,
+      "reviewCount": 2103,
+      "inStock": true,
+      "stockCount": 19,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_031",
+      "departmentId": "electronics",
+      "category": "Audio",
+      "name": "BassWave Over-Ear Headphones",
+      "pricePaise": 499900,
+      "originalPricePaise": null,
+      "description": "Premium over-ear with 40mm drivers, BT 5.3, 60hr playtime.",
+      "rating": 4.737776579483103,
+      "reviewCount": 109,
+      "inStock": true,
+      "stockCount": 6,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_032",
+      "departmentId": "electronics",
+      "category": "Audio",
+      "name": "SoundPillar Bluetooth Speaker",
+      "pricePaise": 349900,
+      "originalPricePaise": null,
+      "description": "360° sound, IPX7 waterproof, 20hr battery. Party-ready.",
+      "rating": 4.3,
+      "reviewCount": 198,
+      "inStock": true,
+      "stockCount": 15,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_033",
+      "departmentId": "electronics",
+      "category": "Wearables",
+      "name": "FitBand Ultra Smartwatch",
+      "pricePaise": 999900,
+      "originalPricePaise": null,
+      "description": "1.4\" AMOLED, SpO2, GPS, 100+ sports, 14-day battery.",
+      "rating": 4.4,
+      "reviewCount": 140,
+      "inStock": true,
+      "stockCount": 39,
+      "badge": "Popular",
+      "featured": false
+    },
+    {
+      "id": "prod_034",
+      "departmentId": "electronics",
+      "category": "Accessories",
+      "name": "GaN 65W USB-C Charger",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "Triple-port GaN charger. Charge laptop + phone simultaneously.",
+      "rating": 4.7,
+      "reviewCount": 96,
+      "inStock": true,
+      "stockCount": 28,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_035",
+      "departmentId": "electronics",
+      "category": "Accessories",
+      "name": "USB-C Hub 7-in-1",
+      "pricePaise": 249900,
+      "originalPricePaise": null,
+      "description": "HDMI 4K + USB 3.0 ×2 + SD + microSD + PD 100W + Ethernet.",
+      "rating": 3.808177076714435,
+      "reviewCount": 194,
+      "inStock": true,
+      "stockCount": 21,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_036",
+      "departmentId": "electronics",
+      "category": "Gaming",
+      "name": "Vortex RGB Mechanical Keyboard",
+      "pricePaise": 449900,
+      "originalPricePaise": null,
+      "description": "Hot-swappable switches, per-key RGB, gasket mount. Gaming & typing.",
+      "rating": 4.8,
+      "reviewCount": 41,
+      "inStock": true,
+      "stockCount": 11,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_037",
+      "departmentId": "electronics",
+      "category": "Gaming",
+      "name": "Precision X Gaming Mouse",
+      "pricePaise": 299900,
+      "originalPricePaise": null,
+      "description": "26K DPI optical sensor, 65g ultralight, PTFE feet.",
+      "rating": 3.9348124219460057,
+      "reviewCount": 126,
+      "inStock": true,
+      "stockCount": 26,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_038",
+      "departmentId": "home",
+      "category": "Furniture",
+      "name": "Zenith Ergonomic Office Chair",
+      "pricePaise": 1499900,
+      "originalPricePaise": null,
+      "description": "Full mesh, adjustable lumbar, 4D armrests, 135° recline.",
+      "rating": 4.7,
+      "reviewCount": 673,
+      "inStock": true,
+      "stockCount": 38,
+      "badge": "Best Seller",
+      "featured": true
+    },
+    {
+      "id": "prod_039",
+      "departmentId": "home",
+      "category": "Furniture",
+      "name": "Modular L-Shape Sofa — Charcoal",
+      "pricePaise": 3999900,
+      "originalPricePaise": null,
+      "description": "Modular 3-seater with chaise. Removable covers, pocket springs.",
+      "rating": 4.5,
+      "reviewCount": 87,
+      "inStock": true,
+      "stockCount": 19,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_040",
+      "departmentId": "home",
+      "category": "Furniture",
+      "name": "Standing Desk — Electric",
+      "pricePaise": 2499900,
+      "originalPricePaise": null,
+      "description": "Dual motor height-adjustable desk. 60×120cm bamboo top.",
+      "rating": 4.6,
+      "reviewCount": 146,
+      "inStock": true,
+      "stockCount": 23,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_041",
+      "departmentId": "home",
+      "category": "Decor",
+      "name": "Geometric Wall Art Set (3 Pieces)",
+      "pricePaise": 249900,
+      "originalPricePaise": null,
+      "description": "Metal geometric wall art in matte black. Modern minimalist.",
+      "rating": 4.731606745505124,
+      "reviewCount": 88,
+      "inStock": true,
+      "stockCount": 35,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_042",
+      "departmentId": "home",
+      "category": "Decor",
+      "name": "Indoor Planter Set — Terracotta",
+      "pricePaise": 149900,
+      "originalPricePaise": null,
+      "description": "Set of 4 terracotta planters with bamboo saucers.",
+      "rating": 4.459283356171448,
+      "reviewCount": 42,
+      "inStock": true,
+      "stockCount": 7,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_043",
+      "departmentId": "home",
+      "category": "Lighting",
+      "name": "Arc Floor Lamp — Brass",
+      "pricePaise": 599900,
+      "originalPricePaise": null,
+      "description": "Adjustable arc floor lamp in brushed brass with fabric shade.",
+      "rating": 4.6307406230386965,
+      "reviewCount": 143,
+      "inStock": true,
+      "stockCount": 42,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_044",
+      "departmentId": "home",
+      "category": "Lighting",
+      "name": "Smart LED Strip — 5m RGBW",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "WiFi-enabled RGBW LED strip. 16M colors, music sync.",
+      "rating": 4.3,
+      "reviewCount": 168,
+      "inStock": true,
+      "stockCount": 8,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_045",
+      "departmentId": "home",
+      "category": "Kitchen",
+      "name": "Pour Over Coffee Set",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "V60 dripper + server + kettle + filters. Barista at home.",
+      "rating": 4.3433995769456,
+      "reviewCount": 79,
+      "inStock": true,
+      "stockCount": 12,
+      "badge": "New",
+      "featured": false
+    },
+    {
+      "id": "prod_046",
+      "departmentId": "home",
+      "category": "Kitchen",
+      "name": "Cast Iron Dutch Oven 5.5L",
+      "pricePaise": 399900,
+      "originalPricePaise": null,
+      "description": "Enameled cast iron. Oven-safe to 260°C. Lifetime warranty.",
+      "rating": 4.8,
+      "reviewCount": 103,
+      "inStock": true,
+      "stockCount": 45,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_047",
+      "departmentId": "home",
+      "category": "Bedding",
+      "name": "Bamboo Bed Sheet Set — King",
+      "pricePaise": 349900,
+      "originalPricePaise": 449900,
+      "description": "100% bamboo viscose. Thermoregulating, silky-soft. 400TC.",
+      "rating": 4.600263240336616,
+      "reviewCount": 143,
+      "inStock": true,
+      "stockCount": 19,
+      "badge": "22% Off",
+      "featured": false
+    },
+    {
+      "id": "prod_048",
+      "departmentId": "home",
+      "category": "Storage",
+      "name": "Modular Closet Organizer",
+      "pricePaise": 299900,
+      "originalPricePaise": null,
+      "description": "Stackable steel and fabric closet system. Configurable.",
+      "rating": 4.88139504953123,
+      "reviewCount": 163,
+      "inStock": true,
+      "stockCount": 24,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_049",
+      "departmentId": "grocery",
+      "category": "Fruits",
+      "name": "Organic Alphonso Mangoes — 1kg",
+      "pricePaise": 49900,
+      "originalPricePaise": null,
+      "description": "Premium Ratnagiri Alphonso mangoes. Naturally ripened.",
+      "rating": 4.9,
+      "reviewCount": 1543,
+      "inStock": true,
+      "stockCount": 27,
+      "badge": "Seasonal",
+      "featured": true
+    },
+    {
+      "id": "prod_050",
+      "departmentId": "grocery",
+      "category": "Fruits",
+      "name": "Imported Blueberries — 125g",
+      "pricePaise": 34900,
+      "originalPricePaise": null,
+      "description": "Fresh premium blueberries. Rich in antioxidants.",
+      "rating": 3.91873294097077,
+      "reviewCount": 185,
+      "inStock": true,
+      "stockCount": 44,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_051",
+      "departmentId": "grocery",
+      "category": "Fruits",
+      "name": "Fresh Avocados — Pack of 4",
+      "pricePaise": 39900,
+      "originalPricePaise": null,
+      "description": "Hass avocados at perfect ripeness. Ready to eat.",
+      "rating": 3.8998922284741795,
+      "reviewCount": 69,
+      "inStock": true,
+      "stockCount": 16,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_052",
+      "departmentId": "grocery",
+      "category": "Vegetables",
+      "name": "Organic Veggie Box — Weekly",
+      "pricePaise": 69900,
+      "originalPricePaise": null,
+      "description": "Curated mix of 8-10 seasonal organic vegetables.",
+      "rating": 3.50768800955787,
+      "reviewCount": 191,
+      "inStock": true,
+      "stockCount": 42,
+      "badge": "Popular",
+      "featured": true
+    },
+    {
+      "id": "prod_053",
+      "departmentId": "grocery",
+      "category": "Vegetables",
+      "name": "Baby Spinach — 200g",
+      "pricePaise": 14900,
+      "originalPricePaise": null,
+      "description": "Tender baby spinach leaves. Triple-washed and ready to use.",
+      "rating": 4.98823133055622,
+      "reviewCount": 193,
+      "inStock": true,
+      "stockCount": 42,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_054",
+      "departmentId": "grocery",
+      "category": "Dairy",
+      "name": "Greek Yogurt — Mixed Berry 400g",
+      "pricePaise": 19900,
+      "originalPricePaise": null,
+      "description": "High-protein Greek yogurt with real mixed berry compote.",
+      "rating": 4.4,
+      "reviewCount": 154,
+      "inStock": true,
+      "stockCount": 44,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_055",
+      "departmentId": "grocery",
+      "category": "Dairy",
+      "name": "A2 Farm Fresh Milk — 1L",
+      "pricePaise": 9900,
+      "originalPricePaise": null,
+      "description": "Single-origin A2 cow milk. No hormones, no additives.",
+      "rating": 3.9060753932475367,
+      "reviewCount": 46,
+      "inStock": true,
+      "stockCount": 49,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_056",
+      "departmentId": "grocery",
+      "category": "Snacks",
+      "name": "Dark Chocolate Almond Clusters",
+      "pricePaise": 29900,
+      "originalPricePaise": null,
+      "description": "70% dark chocolate with roasted almonds and sea salt.",
+      "rating": 4.7,
+      "reviewCount": 32,
+      "inStock": true,
+      "stockCount": 31,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_057",
+      "departmentId": "grocery",
+      "category": "Snacks",
+      "name": "Multigrain Chips — Herb & Cheese",
+      "pricePaise": 14900,
+      "originalPricePaise": null,
+      "description": "Baked multigrain chips. No artificial flavors.",
+      "rating": 4.711432137663606,
+      "reviewCount": 166,
+      "inStock": true,
+      "stockCount": 51,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_058",
+      "departmentId": "grocery",
+      "category": "Beverages",
+      "name": "Cold Brew Coffee — 330ml ×6",
+      "pricePaise": 59900,
+      "originalPricePaise": null,
+      "description": "Ready-to-drink cold brew. Single origin, no sugar added.",
+      "rating": 4.732816033731393,
+      "reviewCount": 70,
+      "inStock": true,
+      "stockCount": 19,
+      "badge": "New",
+      "featured": false
+    },
+    {
+      "id": "prod_059",
+      "departmentId": "grocery",
+      "category": "Beverages",
+      "name": "Kombucha — Ginger Lemon ×4",
+      "pricePaise": 39900,
+      "originalPricePaise": null,
+      "description": "Probiotic kombucha with fresh ginger and lemon.",
+      "rating": 4.835586649667627,
+      "reviewCount": 65,
+      "inStock": true,
+      "stockCount": 36,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_060",
+      "departmentId": "grocery",
+      "category": "Staples",
+      "name": "Organic Basmati Rice — 5kg",
+      "pricePaise": 79900,
+      "originalPricePaise": null,
+      "description": "Extra-long grain aged basmati. Certified organic.",
+      "rating": 4.178404271277339,
+      "reviewCount": 171,
+      "inStock": true,
+      "stockCount": 27,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_061",
+      "departmentId": "grocery",
+      "category": "Staples",
+      "name": "Extra Virgin Olive Oil — 1L",
+      "pricePaise": 89900,
+      "originalPricePaise": null,
+      "description": "Cold-pressed EVOO from Mediterranean olives. First press.",
+      "rating": 3.772959752822298,
+      "reviewCount": 114,
+      "inStock": true,
+      "stockCount": 9,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_062",
+      "departmentId": "kids",
+      "category": "Toys",
+      "name": "Space Explorer Building Set — 500pc",
+      "pricePaise": 249900,
+      "originalPricePaise": null,
+      "description": "Interlocking brick set with rocket, space station, and astronauts.",
+      "rating": 4.9,
+      "reviewCount": 876,
+      "inStock": true,
+      "stockCount": 42,
+      "badge": "Top Rated",
+      "featured": true
+    },
+    {
+      "id": "prod_063",
+      "departmentId": "kids",
+      "category": "Toys",
+      "name": "Interactive Globe — AR Enabled",
+      "pricePaise": 349900,
+      "originalPricePaise": null,
+      "description": "Smart globe with AR app. Learn geography, animals, and cultures.",
+      "rating": 4.7,
+      "reviewCount": 28,
+      "inStock": true,
+      "stockCount": 12,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_064",
+      "departmentId": "kids",
+      "category": "Toys",
+      "name": "Wooden Train Set — 60pc",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "FSC-certified wooden train with tracks, bridges, and town.",
+      "rating": 3.87456548489502,
+      "reviewCount": 36,
+      "inStock": true,
+      "stockCount": 23,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_065",
+      "departmentId": "kids",
+      "category": "Clothing",
+      "name": "Dino Print Hoodie — Age 4-12",
+      "pricePaise": 99900,
+      "originalPricePaise": null,
+      "description": "Soft fleece hoodie with glow-in-the-dark dinosaur print.",
+      "rating": 4.187914408362447,
+      "reviewCount": 139,
+      "inStock": true,
+      "stockCount": 12,
+      "badge": "Popular",
+      "featured": false
+    },
+    {
+      "id": "prod_066",
+      "departmentId": "kids",
+      "category": "Clothing",
+      "name": "Rainbow Tutu Dress — Age 2-8",
+      "pricePaise": 129900,
+      "originalPricePaise": null,
+      "description": "Layered tulle tutu dress in rainbow colors. Party-ready.",
+      "rating": 4.474274896471808,
+      "reviewCount": 171,
+      "inStock": true,
+      "stockCount": 25,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_067",
+      "departmentId": "kids",
+      "category": "Books",
+      "name": "Illustrated Solar System Encyclopedia",
+      "pricePaise": 79900,
+      "originalPricePaise": null,
+      "description": "Full-color illustrated guide to our solar system. Ages 6-14.",
+      "rating": 4.004089345420347,
+      "reviewCount": 204,
+      "inStock": true,
+      "stockCount": 33,
+      "badge": null,
+      "featured": true
+    },
+    {
+      "id": "prod_068",
+      "departmentId": "kids",
+      "category": "Books",
+      "name": "Bedtime Stories Collection — 50 Tales",
+      "pricePaise": 49900,
+      "originalPricePaise": null,
+      "description": "Illustrated storybook with 50 tales from around the world.",
+      "rating": 3.8424269538937468,
+      "reviewCount": 23,
+      "inStock": true,
+      "stockCount": 21,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_069",
+      "departmentId": "kids",
+      "category": "School",
+      "name": "Smart Backpack — Glow Zipper",
+      "pricePaise": 149900,
+      "originalPricePaise": null,
+      "description": "Ergonomic school backpack with reflective glow zippers and rain cover.",
+      "rating": 4.5,
+      "reviewCount": 119,
+      "inStock": true,
+      "stockCount": 40,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_070",
+      "departmentId": "kids",
+      "category": "School",
+      "name": "Art Supply Kit — 120 Pieces",
+      "pricePaise": 99900,
+      "originalPricePaise": null,
+      "description": "Complete art set: crayons, markers, colored pencils, watercolors.",
+      "rating": 4.513454541419286,
+      "reviewCount": 178,
+      "inStock": true,
+      "stockCount": 26,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_071",
+      "departmentId": "kids",
+      "category": "Games",
+      "name": "Strategy Board Game — Quest World",
+      "pricePaise": 199900,
+      "originalPricePaise": null,
+      "description": "Family strategy game for 2-6 players. Ages 8+.",
+      "rating": 3.7061534443199715,
+      "reviewCount": 40,
+      "inStock": true,
+      "stockCount": 27,
+      "badge": "Award Winner",
+      "featured": false
+    },
+    {
+      "id": "prod_072",
+      "departmentId": "kids",
+      "category": "Baby",
+      "name": "Organic Cotton Onesie Set — 3 Pack",
+      "pricePaise": 89900,
+      "originalPricePaise": null,
+      "description": "GOTS-certified organic cotton onesies. Newborn to 12 months.",
+      "rating": 3.982766155295783,
+      "reviewCount": 48,
+      "inStock": true,
+      "stockCount": 20,
+      "badge": null,
+      "featured": false
+    },
+    {
+      "id": "prod_073",
+      "departmentId": "kids",
+      "category": "Baby",
+      "name": "Silicone Feeding Set — 5 Piece",
+      "pricePaise": 69900,
+      "originalPricePaise": null,
+      "description": "BPA-free silicone plate, bowl, bib, spoon, and cup.",
+      "rating": 3.7904257139281,
+      "reviewCount": 121,
+      "inStock": true,
+      "stockCount": 32,
+      "badge": null,
+      "featured": false
+    }
+  ],
+  "productVariants": [],
+  "inventory": [
+    {
+      "id": "inv_1792755579135_93o7",
+      "productId": "prod_001",
+      "stockCount": 49,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579137_5mxx",
+      "productId": "prod_002",
+      "stockCount": 19,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579139_ndk6",
+      "productId": "prod_003",
+      "stockCount": 21,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579140_la6d",
+      "productId": "prod_004",
+      "stockCount": 37,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579142_149p",
+      "productId": "prod_005",
+      "stockCount": 22,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579143_sq3r",
+      "productId": "prod_006",
+      "stockCount": 5,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579145_pj9l",
+      "productId": "prod_007",
+      "stockCount": 41,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579147_9537",
+      "productId": "prod_008",
+      "stockCount": 43,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579149_gaaz",
+      "productId": "prod_009",
+      "stockCount": 17,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579151_hyro",
+      "productId": "prod_010",
+      "stockCount": 35,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579153_tq6c",
+      "productId": "prod_011",
+      "stockCount": 37,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579155_c1ht",
+      "productId": "prod_012",
+      "stockCount": 35,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579157_tb8r",
+      "productId": "prod_013",
+      "stockCount": 18,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579158_b0x1",
+      "productId": "prod_014",
+      "stockCount": 22,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579161_iclw",
+      "productId": "prod_015",
+      "stockCount": 41,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579163_0yw9",
+      "productId": "prod_016",
+      "stockCount": 27,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579165_jyih",
+      "productId": "prod_017",
+      "stockCount": 38,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579167_39ii",
+      "productId": "prod_018",
+      "stockCount": 24,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579169_looh",
+      "productId": "prod_019",
+      "stockCount": 10,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579170_16a0",
+      "productId": "prod_020",
+      "stockCount": 42,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579172_2g43",
+      "productId": "prod_021",
+      "stockCount": 50,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579174_x2d5",
+      "productId": "prod_022",
+      "stockCount": 43,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579176_5hrm",
+      "productId": "prod_023",
+      "stockCount": 52,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579179_653c",
+      "productId": "prod_024",
+      "stockCount": 16,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579181_iv0u",
+      "productId": "prod_025",
+      "stockCount": 45,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579183_4z1x",
+      "productId": "prod_026",
+      "stockCount": 30,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579186_w770",
+      "productId": "prod_027",
+      "stockCount": 32,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579187_ago8",
+      "productId": "prod_028",
+      "stockCount": 45,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579189_wxwc",
+      "productId": "prod_029",
+      "stockCount": 38,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579191_64qe",
+      "productId": "prod_030",
+      "stockCount": 19,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579193_pxyp",
+      "productId": "prod_031",
+      "stockCount": 6,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579195_lwre",
+      "productId": "prod_032",
+      "stockCount": 15,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579197_3cjy",
+      "productId": "prod_033",
+      "stockCount": 39,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579199_eva8",
+      "productId": "prod_034",
+      "stockCount": 28,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579201_qo8p",
+      "productId": "prod_035",
+      "stockCount": 21,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579203_nibj",
+      "productId": "prod_036",
+      "stockCount": 11,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579204_a6jk",
+      "productId": "prod_037",
+      "stockCount": 26,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579207_0cyx",
+      "productId": "prod_038",
+      "stockCount": 38,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579210_nabp",
+      "productId": "prod_039",
+      "stockCount": 19,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579213_wog0",
+      "productId": "prod_040",
+      "stockCount": 23,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579215_bi5s",
+      "productId": "prod_041",
+      "stockCount": 35,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579218_we1k",
+      "productId": "prod_042",
+      "stockCount": 7,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579220_0t2e",
+      "productId": "prod_043",
+      "stockCount": 42,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579223_05h8",
+      "productId": "prod_044",
+      "stockCount": 8,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579225_t718",
+      "productId": "prod_045",
+      "stockCount": 12,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579228_6sbs",
+      "productId": "prod_046",
+      "stockCount": 45,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579231_8cbp",
+      "productId": "prod_047",
+      "stockCount": 19,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579233_kg9d",
+      "productId": "prod_048",
+      "stockCount": 24,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579235_gdh7",
+      "productId": "prod_049",
+      "stockCount": 27,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579238_m700",
+      "productId": "prod_050",
+      "stockCount": 44,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579240_fagm",
+      "productId": "prod_051",
+      "stockCount": 16,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579243_po5a",
+      "productId": "prod_052",
+      "stockCount": 42,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579247_amlt",
+      "productId": "prod_053",
+      "stockCount": 42,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579249_rjrn",
+      "productId": "prod_054",
+      "stockCount": 44,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579252_rklp",
+      "productId": "prod_055",
+      "stockCount": 49,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579254_q4t7",
+      "productId": "prod_056",
+      "stockCount": 31,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579258_m4c6",
+      "productId": "prod_057",
+      "stockCount": 51,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579261_b9pa",
+      "productId": "prod_058",
+      "stockCount": 19,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579263_f7y0",
+      "productId": "prod_059",
+      "stockCount": 36,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579266_s68p",
+      "productId": "prod_060",
+      "stockCount": 27,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579268_irvs",
+      "productId": "prod_061",
+      "stockCount": 9,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579271_dsbw",
+      "productId": "prod_062",
+      "stockCount": 42,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579273_u4xy",
+      "productId": "prod_063",
+      "stockCount": 12,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579275_o28x",
+      "productId": "prod_064",
+      "stockCount": 23,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579279_nh6h",
+      "productId": "prod_065",
+      "stockCount": 12,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579282_92mj",
+      "productId": "prod_066",
+      "stockCount": 25,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579284_ff6y",
+      "productId": "prod_067",
+      "stockCount": 33,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579286_fzud",
+      "productId": "prod_068",
+      "stockCount": 21,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579289_zniv",
+      "productId": "prod_069",
+      "stockCount": 40,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579292_2vsc",
+      "productId": "prod_070",
+      "stockCount": 26,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579294_36vn",
+      "productId": "prod_071",
+      "stockCount": 27,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579297_e2xn",
+      "productId": "prod_072",
+      "stockCount": 20,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    },
+    {
+      "id": "inv_1792755579299_pfww",
+      "productId": "prod_073",
+      "stockCount": 32,
+      "reservedCount": 0,
+      "lowStockThreshold": 10
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1792755579955-JIM9",
+      "userId": "usr_shopper_001",
+      "totalPaise": 129900,
+      "subtotalPaise": 129900,
+      "discountPaise": 0,
+      "status": "confirmed",
+      "paymentMethod": "upi",
+      "paymentStatus": "demo_verified",
+      "address": {
+        "fullName": "Aarav Mehta",
+        "street": "Dorm 4B",
+        "pincode": "560103"
+      },
+      "createdAt": "2026-10-23T11:39:39.955Z"
+    }
+  ],
+  "orderItems": [
+    {
+      "id": "oi_1792755579957_u9c7",
+      "orderId": "ORD-1792755579955-JIM9",
+      "productId": "prod_001",
+      "departmentId": "fashion",
+      "name": "Midnight Gradient Oversized Tee",
+      "pricePaise": 129900,
+      "quantity": 1,
+      "lineTotalPaise": 129900
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cpn_001",
+      "code": "MULTIVERSE10",
+      "discountPercent": 10,
+      "maxDiscountPaise": 100000,
+      "minOrderPaise": 200000,
+      "departmentId": null,
+      "active": true
+    },
+    {
+      "id": "cpn_002",
+      "code": "RUNWAY20",
+      "discountPercent": 20,
+      "maxDiscountPaise": 150000,
+      "minOrderPaise": 150000,
+      "departmentId": "fashion",
+      "active": true
+    }
+  ],
+  "reviews": [],
+  "auditLogs": [
+    {
+      "id": "aud_1792755580154_yrbc5",
+      "userId": "usr_deactivated_001",
+      "userRole": "SHOPPER",
+      "action": "DEACTIVATED_ACCOUNT_LOGIN_BLOCKED",
+      "entity": "User",
+      "entityId": "usr_deactivated_001",
+      "details": {
+        "email": "deactivated@blowmaggy.com",
+        "status": "DEACTIVATED"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:40.154Z"
+    },
+    {
+      "id": "aud_1792755580093_9xsze",
+      "userId": "usr_mgr_fashion_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "CROSS_DEPARTMENT_MODIFICATION_ATTEMPT",
+      "entity": "Department",
+      "entityId": "electronics",
+      "details": {
+        "assignedDepartments": [
+          "fashion"
+        ],
+        "attemptedDepartment": "electronics",
+        "endpoint": "/api/products/prod_026",
+        "method": "PUT"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:40.093Z"
+    },
+    {
+      "id": "aud_1792755580078_x68lj",
+      "userId": "usr_1792755580067_aa7jf",
+      "userRole": "SHOPPER",
+      "action": "CROSS_USER_ORDER_ACCESS_BLOCKED",
+      "entity": "Order",
+      "entityId": "ORD-1792755579955-JIM9",
+      "details": {
+        "orderOwnerId": "usr_shopper_001",
+        "requesterId": "usr_1792755580067_aa7jf"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:40.078Z"
+    },
+    {
+      "id": "aud_1792755579962_re4ak",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "ORDER_PLACED",
+      "entity": "Order",
+      "entityId": "ORD-1792755579955-JIM9",
+      "details": {
+        "totalPaise": 129900,
+        "itemCount": 1,
+        "paymentMethod": "upi"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.962Z"
+    },
+    {
+      "id": "aud_1792755579926_pnu31",
+      "userId": "usr_admin_001",
+      "userRole": "STORE_ADMIN",
+      "action": "STOCK_OVERRIDDEN",
+      "entity": "Product",
+      "entityId": "prod_026",
+      "details": {
+        "previousStock": 31,
+        "newStock": 30,
+        "inStock": true
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.926Z"
+    },
+    {
+      "id": "aud_1792755579918_h5qg0",
+      "userId": "usr_admin_001",
+      "userRole": "STORE_ADMIN",
+      "action": "STOCK_OVERRIDDEN",
+      "entity": "Product",
+      "entityId": "prod_001",
+      "details": {
+        "previousStock": 42,
+        "newStock": 50,
+        "inStock": true
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.918Z"
+    },
+    {
+      "id": "aud_1792755579909_jjwal",
+      "userId": "usr_mgr_fashion_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/admin/managers",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN"
+        ],
+        "actualRole": "DEPARTMENT_MANAGER",
+        "method": "POST",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.909Z"
+    },
+    {
+      "id": "aud_1792755579893_phthr",
+      "userId": "usr_mgr_fashion_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "CROSS_DEPARTMENT_MODIFICATION_ATTEMPT",
+      "entity": "Department",
+      "entityId": "electronics",
+      "details": {
+        "assignedDepartments": [
+          "fashion"
+        ],
+        "attemptedDepartment": "electronics",
+        "endpoint": "/api/products/prod_026/stock",
+        "method": "PATCH"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.893Z"
+    },
+    {
+      "id": "aud_1792755579873_qjl79",
+      "userId": "usr_mgr_fashion_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "STOCK_OVERRIDDEN",
+      "entity": "Product",
+      "entityId": "prod_001",
+      "details": {
+        "previousStock": 41,
+        "newStock": 42,
+        "inStock": true
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.873Z"
+    },
+    {
+      "id": "aud_1792755579863_r3ato",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/admin/audit-logs",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN"
+        ],
+        "actualRole": "SHOPPER",
+        "method": "GET",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.863Z"
+    },
+    {
+      "id": "aud_1792755579846_8v95k",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/admin/metrics",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN"
+        ],
+        "actualRole": "SHOPPER",
+        "method": "GET",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.846Z"
+    },
+    {
+      "id": "aud_1792755579831_xpno2",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/products/prod_001",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN",
+          "DEPARTMENT_MANAGER"
+        ],
+        "actualRole": "SHOPPER",
+        "method": "DELETE",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.831Z"
+    },
+    {
+      "id": "aud_1792755579816_odcys",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/products/prod_001",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN",
+          "DEPARTMENT_MANAGER"
+        ],
+        "actualRole": "SHOPPER",
+        "method": "PUT",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.816Z"
+    },
+    {
+      "id": "aud_1792755579799_e9fqj",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "UNAUTHORIZED_ROLE_ACCESS_ATTEMPT",
+      "entity": "/api/products/",
+      "entityId": null,
+      "details": {
+        "requiredRoles": [
+          "STORE_ADMIN",
+          "DEPARTMENT_MANAGER"
+        ],
+        "actualRole": "SHOPPER",
+        "method": "POST",
+        "ip": "::1"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.799Z"
+    },
+    {
+      "id": "aud_1792755579791_cyoiv",
+      "userId": "usr_admin_001",
+      "userRole": "STORE_ADMIN",
+      "action": "USER_LOGIN_SUCCESS",
+      "entity": "Session",
+      "entityId": "usr_admin_001",
+      "details": {
+        "role": "STORE_ADMIN",
+        "assignedDepartments": []
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.791Z"
+    },
+    {
+      "id": "aud_1792755579692_5b9kl",
+      "userId": "usr_mgr_tech_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "USER_LOGIN_SUCCESS",
+      "entity": "Session",
+      "entityId": "usr_mgr_tech_001",
+      "details": {
+        "role": "DEPARTMENT_MANAGER",
+        "assignedDepartments": [
+          "electronics"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.692Z"
+    },
+    {
+      "id": "aud_1792755579570_zf06l",
+      "userId": "usr_mgr_fashion_001",
+      "userRole": "DEPARTMENT_MANAGER",
+      "action": "USER_LOGIN_SUCCESS",
+      "entity": "Session",
+      "entityId": "usr_mgr_fashion_001",
+      "details": {
+        "role": "DEPARTMENT_MANAGER",
+        "assignedDepartments": [
+          "fashion"
+        ]
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.570Z"
+    },
+    {
+      "id": "aud_1792755579471_z68e4",
+      "userId": "usr_shopper_001",
+      "userRole": "SHOPPER",
+      "action": "USER_LOGIN_SUCCESS",
+      "entity": "Session",
+      "entityId": "usr_shopper_001",
+      "details": {
+        "role": "SHOPPER",
+        "assignedDepartments": []
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.471Z"
+    },
+    {
+      "id": "aud_1792755579304_hb6jn",
+      "userId": "usr_admin_001",
+      "userRole": "STORE_ADMIN",
+      "action": "SYSTEM_SEED_INITIALIZATION",
+      "entity": "System",
+      "entityId": "ALL",
+      "details": {
+        "departmentsCount": 6,
+        "productsCount": 73,
+        "usersProvisioned": 5,
+        "version": "1.0.0"
+      },
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-10-23T11:39:39.304Z"
+    }
+  ]
+}

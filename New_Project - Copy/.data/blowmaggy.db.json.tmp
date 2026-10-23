@@ -1,0 +1,62 @@
+{
+  "users": [],
+  "departments": [
+    {
+      "id": "fashion",
+      "name": "The Runway",
+      "subtitle": "Fashion",
+      "tagline": "Style has no boundaries",
+      "color": "#e91e8c",
+      "icon": "👗"
+    },
+    {
+      "id": "beauty",
+      "name": "The Lab",
+      "subtitle": "Beauty",
+      "tagline": "Science meets glow",
+      "color": "#f472b6",
+      "icon": "✨"
+    },
+    {
+      "id": "electronics",
+      "name": "The Grid",
+      "subtitle": "Electronics",
+      "tagline": "Power your world",
+      "color": "#06d6d6",
+      "icon": "⚡"
+    },
+    {
+      "id": "home",
+      "name": "The Sanctuary",
+      "subtitle": "Home",
+      "tagline": "Design your peace",
+      "color": "#a78bfa",
+      "icon": "🏡"
+    },
+    {
+      "id": "grocery",
+      "name": "The Dailyverse",
+      "subtitle": "Grocery",
+      "tagline": "Fresh. Fast. Real.",
+      "color": "#34d399",
+      "icon": "🥑"
+    },
+    {
+      "id": "kids",
+      "name": "The Wonderland",
+      "subtitle": "Kids",
+      "tagline": "Where imagination shops",
+      "color": "#fbbf24",
+      "icon": "🧸"
+    }
+  ],
+  "departmentManagerAssignments": [],
+  "products": [],
+  "productVariants": [],
+  "inventory": [],
+  "orders": [],
+  "orderItems": [],
+  "coupons": [],
+  "reviews": [],
+  "auditLogs": []
+}

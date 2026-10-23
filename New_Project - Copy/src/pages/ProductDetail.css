@@ -1,0 +1,336 @@
+/* =========================================================
+   Product Detail Styles
+   ========================================================= */
+
+.product-detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+  padding-bottom: var(--space-4xl);
+}
+
+.breadcrumb-row {
+  display: flex;
+  gap: 8px;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  padding-top: var(--space-md);
+}
+
+.current-crumb {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.product-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* Visual Stage */
+.product-visual-stage {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-color: var(--border-subtle);
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--dept-color) 12%, var(--bg-tertiary)),
+    var(--bg-secondary)
+  );
+  overflow: hidden;
+}
+
+.visual-hero-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.visual-hero-emoji {
+  font-size: 4rem;
+}
+
+.visual-hero-char {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--dept-color);
+  opacity: 0.6;
+}
+
+.product-hero-badge {
+  position: absolute;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.visual-footer-info {
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-md);
+  right: var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.dept-auth-tag {
+  color: var(--text-muted);
+}
+
+.stock-status-pill.in-stock {
+  color: #34d399;
+  font-weight: 600;
+}
+
+/* Actions Panel */
+.product-actions-panel {
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.dept-tag-name {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-title-text {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.product-rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: var(--fs-xs);
+}
+
+.rating-stars {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+.rating-reviews {
+  color: var(--text-muted);
+}
+
+/* Price Box */
+.product-price-box {
+  background: var(--bg-tertiary);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--dept-color);
+}
+
+.price-main-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+}
+
+.current-price-val {
+  font-size: var(--fs-3xl);
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.original-price-val {
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.tax-inclusive-tag {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.product-desc-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: var(--fs-sm);
+}
+
+/* Variants */
+.variant-selection-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.variant-label {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.variant-options-row {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.variant-chip {
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.variant-chip:hover {
+  border-color: var(--dept-color);
+  color: var(--text-primary);
+}
+
+.variant-chip.active {
+  border-color: var(--dept-color);
+  background: var(--dept-color);
+  color: white;
+}
+
+/* Cart Group */
+.cart-action-group {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.qty-picker {
+  display: flex;
+  align-items: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.qty-picker button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: background 0.2s;
+}
+
+.qty-picker button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.qty-display {
+  width: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+}
+
+.add-to-cart-cta {
+  flex: 1;
+  min-width: 220px;
+}
+
+.wishlist-action-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.wishlist-action-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--accent-magenta);
+}
+
+/* Perks */
+.product-perks-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.perk-item {
+  display: flex;
+  gap: var(--space-md);
+  font-size: var(--fs-xs);
+}
+
+.perk-item span {
+  font-size: 1.4rem;
+}
+
+.perk-item strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.perk-item p {
+  color: var(--text-muted);
+}
+
+/* Cross recommendations */
+.cross-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (max-width: 1024px) {
+  .product-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+  .cross-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cross-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
