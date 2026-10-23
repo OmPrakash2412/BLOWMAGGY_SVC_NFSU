@@ -9,12 +9,12 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
-            <span className="logo-icon">◈</span>
-            <span className="logo-text">BLOWMAGGY</span>
+            <span className="logo-icon">❋</span>
+            <span className="logo-text">BLOWMAGGY <span className="logo-z">- Z</span></span>
           </div>
           <p className="footer-tagline">
-            Your intelligent shopping multiverse.
-            Six worlds, one unified experience.
+            Your all-in-one shopping destination.
+            Six curated departments, one unified checkout.
           </p>
           <p className="footer-demo-notice">
             ⚠️ Demo Application — No real payments or deliveries.
@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4>Multiverse</h4>
+          <h4>Departments</h4>
           <ul>
             {DEPARTMENTS.map(d => (
               <li key={d.id}>
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom container">
-        <p>© 2026 BLOWMAGGY. Hackathon Project — Not a real store.</p>
+        <p>© 2026 BLOWMAGGY - Z. All rights reserved.</p>
         <p>Prices in INR (₹). All data is demo/synthetic.</p>
       </div>
     </footer>

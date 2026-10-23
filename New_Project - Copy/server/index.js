@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 const healthHandler = (req, res) => {
   res.json({
     status: 'ONLINE',
-    system: 'BLOWMAGGY Multiverse Backend',
+    system: 'BLOWMAGGY - Z Backend',
     version: '1.0.0',
     timestamp: new Date().toISOString(),
     catalogSize: db.products.findMany().length,

@@ -39,9 +39,9 @@ export default function Navbar() {
     <nav className="navbar glass-card" role="navigation" aria-label="Main navigation">
       <div className="navbar-inner container">
         {/* Logo */}
-        <Link to="/" className="navbar-logo" aria-label="BLOWMAGGY Home">
-          <span className="logo-icon">◈</span>
-          <span className="logo-text">BLOWMAGGY</span>
+        <Link to="/" className="navbar-logo" aria-label="BLOWMAGGY - Z Home">
+          <span className="logo-icon">❋</span>
+          <span className="logo-text">BLOWMAGGY <span className="logo-z">- Z</span></span>
         </Link>
 
         {/* Desktop Nav Links */}
@@ -54,7 +54,7 @@ export default function Navbar() {
               aria-expanded={deptDropdown}
               aria-haspopup="true"
             >
-              Multiverse ▾
+              Departments ▾
             </button>
             {deptDropdown && (
               <div className="dept-dropdown" role="menu">
@@ -84,7 +84,7 @@ export default function Navbar() {
               ref={searchRef}
               type="search"
               className="search-input"
-              placeholder="Search the multiverse..."
+              placeholder="Search products..."
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               aria-label="Search products"
@@ -95,16 +95,6 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="navbar-actions">
-          <button
-            className="nav-action-btn orbit-btn"
-            onClick={toggleOrbit}
-            aria-label="Open ORBIT shopping assistant"
-            title="ORBIT Assistant"
-          >
-            <span className="orbit-icon">◉</span>
-            <span className="orbit-label">ORBIT</span>
-          </button>
-
           <Link to="/wishlist" className="nav-action-btn" aria-label="Wishlist" title="Wishlist">
             ♡
           </Link>

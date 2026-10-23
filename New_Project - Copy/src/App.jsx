@@ -8,8 +8,6 @@ import { lazy, Suspense } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import ToastContainer from './components/ToastContainer.jsx';
-import OrbitFAB from './components/OrbitFAB.jsx';
-import OrbitPanel from './components/OrbitPanel.jsx';
 import { useApp } from './context/AppContext.jsx';
 import './App.css';
 
@@ -87,8 +85,6 @@ export default function App() {
         </Suspense>
       </main>
       <Footer />
-      <OrbitFAB />
-      {orbitOpen && <OrbitPanel />}
       <ToastContainer />
     </div>
   );

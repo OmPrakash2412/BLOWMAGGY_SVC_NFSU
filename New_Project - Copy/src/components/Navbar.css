@@ -45,6 +45,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.logo-z {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0;
+}
 
 /* Center */
 .navbar-center {

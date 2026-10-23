@@ -81,13 +81,13 @@ export default function Department() {
 
         <div className="container dept-header-inner">
           <div className="dept-breadcrumbs">
-            <Link to="/">Multiverse</Link> <span>/</span> <span className="active-crumb">{dept.subtitle}</span>
+            <Link to="/">Home</Link> <span>/</span> <span className="active-crumb">{dept.subtitle}</span>
           </div>
           <div className="dept-hero-titles">
             <span className="dept-hero-icon">{dept.icon}</span>
             <div>
               <span className="dept-badge-pill" style={{ borderColor: 'rgba(255,255,255,0.6)' }}>
-                {dept.subtitle.toUpperCase()} PORTAL
+                {dept.subtitle.toUpperCase()} COLLECTION
               </span>
               <h1 className="dept-title">{dept.name}</h1>
               <p className="dept-tagline-text">{dept.tagline}</p>

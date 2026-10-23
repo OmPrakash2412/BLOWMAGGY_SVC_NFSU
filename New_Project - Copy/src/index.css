@@ -1,7 +1,7 @@
 /* ============================================================
-   BLOWMAGGY — Global Design System
+   BLOWMAGGY - Z — Global Design System
    ============================================================
-   Dark charcoal, magenta, violet, cyan identity.
+   Light beige + blush pink + rose gold identity.
    Six department-specific palettes.
    ============================================================ */
 
@@ -15,49 +15,49 @@
 :root {
   color-scheme: light;
 
-  /* Light Beige, Warm Linen & Creamy Ivory Surfaces */
-  --bg-primary: #FAF7F2;        /* Elegant natural light beige */
-  --bg-secondary: #F0EAE1;      /* Soft light biscuit/linen */
-  --bg-tertiary: #FFFFFF;       /* Pure crisp white for card interiors */
-  --bg-card: #FDFBF8;           /* Clean warm ivory card background */
-  --bg-elevated: #EAE3D5;       /* Elevated neutral beige for tabs/hover */
-  --bg-glass: rgba(250, 247, 242, 0.92);
+  /* Light Beige & Blush Surfaces */
+  --bg-primary: #FDF7F4;        /* Warm cream with a blush hint */
+  --bg-secondary: #F7EEE9;      /* Soft rose-beige linen */
+  --bg-tertiary: #FFFFFF;       /* Pure white for card interiors */
+  --bg-card: #FEFAF8;           /* Warm cream card */
+  --bg-elevated: #F2E5DF;       /* Elevated blush for tabs/hover */
+  --bg-glass: rgba(253, 247, 244, 0.93);
 
-  --text-primary: #231E1A;      /* Rich deep warm espresso (crisp, high contrast) */
-  --text-secondary: #5C5248;    /* Refined warm taupe */
-  --text-muted: #8E8275;        /* Warm stone grey */
+  --text-primary: #2A1F1C;      /* Rich warm espresso — high contrast */
+  --text-secondary: #6B4F4A;    /* Warm mauve-taupe */
+  --text-muted: #9E8480;        /* Muted dusty rose grey */
   --text-inverse: #FFFFFF;
 
-  /* Warm Amber, Honey Caramel, Golden Bronze & Sage Olive — ZERO PINK */
-  --accent-magenta: #9E632A;          /* Deep rich warm caramel bronze */
-  --accent-magenta-soft: #C28548;     /* Warm amber honey */
-  --accent-violet: #6E5C4E;           /* Roasted walnut */
-  --accent-violet-soft: #917E6F;      /* Muted taupe wood */
-  --accent-cyan: #4A6B61;             /* Earthy sage teal */
-  --accent-cyan-soft: #6A8E83;        /* Muted sage */
+  /* Blush Pink, Rose Gold, Dusty Rose & Mauve */
+  --accent-magenta: #C0627A;          /* Dusty rose / deep blush */
+  --accent-magenta-soft: #D98FA3;     /* Soft rose pink */
+  --accent-violet: #9B6B7E;           /* Warm mauve */
+  --accent-violet-soft: #C099AC;      /* Light mauve */
+  --accent-cyan: #7A8E9E;             /* Muted dusty blue-grey */
+  --accent-cyan-soft: #9FB3C0;        /* Soft steel blue */
 
-  /* Gradient: Luxurious Warm Amber Caramel & Rich Bronze */
-  --gradient-hero: linear-gradient(125deg, #8C5320 0%, #B87939 48%, #724217 100%);
-  --gradient-card: linear-gradient(135deg, rgba(184, 121, 57, 0.1) 0%, rgba(140, 83, 32, 0.04) 100%);
-  --gradient-glow: radial-gradient(ellipse at center, rgba(184, 121, 57, 0.15) 0%, transparent 70%);
+  /* Gradient: Rose Gold & Dusty Pink */
+  --gradient-hero: linear-gradient(125deg, #B85070 0%, #D9829A 48%, #A04060 100%);
+  --gradient-card: linear-gradient(135deg, rgba(192, 98, 122, 0.10) 0%, rgba(184, 80, 112, 0.04) 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(217, 143, 163, 0.18) 0%, transparent 70%);
 
-  --border-subtle: rgba(100, 82, 64, 0.14);
-  --border-active: rgba(158, 99, 42, 0.45);
+  --border-subtle: rgba(160, 100, 110, 0.13);
+  --border-active: rgba(192, 98, 122, 0.4);
 
-  --shadow-sm: 0 2px 8px rgba(60, 48, 36, 0.05);
-  --shadow-md: 0 8px 24px rgba(60, 48, 36, 0.08);
-  --shadow-lg: 0 16px 44px rgba(60, 48, 36, 0.12);
-  --shadow-glow-magenta: 0 8px 24px rgba(158, 99, 42, 0.24);
-  --shadow-glow-violet: 0 8px 24px rgba(110, 92, 78, 0.16);
-  --shadow-glow-cyan: 0 8px 24px rgba(74, 107, 97, 0.16);
+  --shadow-sm: 0 2px 8px rgba(80, 40, 50, 0.06);
+  --shadow-md: 0 8px 24px rgba(80, 40, 50, 0.09);
+  --shadow-lg: 0 16px 44px rgba(80, 40, 50, 0.13);
+  --shadow-glow-magenta: 0 8px 24px rgba(192, 98, 122, 0.28);
+  --shadow-glow-violet: 0 8px 24px rgba(155, 107, 126, 0.18);
+  --shadow-glow-cyan: 0 8px 24px rgba(122, 142, 158, 0.16);
 
-  /* --- Department Colors (Tasteful warm earth/jewel tones without pink) --- */
-  --dept-fashion: #9E632A;      /* Warm cognac / terracotta */
-  --dept-beauty: #C28548;       /* Warm apricot honey */
-  --dept-electronics: #4A6B61;  /* Deep sage teal */
-  --dept-home: #786959;         /* Warm timber taupe */
-  --dept-grocery: #607548;      /* Olive harvest green */
-  --dept-kids: #D08736;         /* Golden amber */
+  /* --- Department Colors — Warm romantic tones --- */
+  --dept-fashion: #C0627A;      /* Blush rose */
+  --dept-beauty: #D98FA3;       /* Soft pink */
+  --dept-electronics: #7A8E9E;  /* Dusty steel blue */
+  --dept-home: #A08060;         /* Warm sand taupe */
+  --dept-grocery: #7A9E6E;      /* Sage garden green */
+  --dept-kids: #E0A840;         /* Warm golden amber */
 
   /* --- Typography --- */
   --font-display: 'Outfit', sans-serif;
@@ -116,7 +116,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: linear-gradient(180deg, #FAF7F2 0%, #F3EDE3 55%, #FAF7F2 100%);
+  background: linear-gradient(180deg, #FDF7F4 0%, #F7EBE6 55%, #FDF7F4 100%);
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
@@ -160,7 +160,7 @@ input, select, textarea {
   background: var(--bg-secondary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #d8c8bd;
+  background: #e8cfd4;
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover {
