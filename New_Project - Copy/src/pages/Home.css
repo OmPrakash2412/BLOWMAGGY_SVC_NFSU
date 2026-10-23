@@ -141,36 +141,58 @@
 
 .dept-card {
   position: relative;
-  padding: var(--space-xl);
   border-radius: var(--radius-xl);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 240px;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
+  min-height: 340px;
+  padding: var(--space-xl);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .dept-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--dept-color);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 24px 60px rgba(60, 48, 36, 0.22);
 }
 
-.dept-card-glow {
+/* Full-bleed background photo */
+.dept-card-bg-img {
   position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  opacity: 0.12;
-  filter: blur(40px);
-  pointer-events: none;
-  transition: opacity 0.3s;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+  z-index: 0;
 }
 
-.dept-card:hover .dept-card-glow {
-  opacity: 0.25;
+.dept-card:hover .dept-card-bg-img {
+  transform: scale(1.07);
+}
+
+/* Dark gradient overlay from bottom */
+.dept-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: opacity 0.35s;
+}
+
+.dept-card:hover .dept-card-overlay {
+  opacity: 1.15;
+}
+
+/* All card content must sit above overlay */
+.dept-card-top,
+.dept-preview-strip,
+.dept-card-bottom {
+  position: relative;
+  z-index: 2;
 }
 
 .dept-card-top {
@@ -180,56 +202,88 @@
 }
 
 .dept-portal-icon {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
 }
 
 .dept-count-badge {
   font-size: 11px;
   font-weight: 700;
-  background: rgba(126, 92, 76, 0.08);
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(8px);
   padding: 4px 10px;
   border-radius: var(--radius-full);
-  color: var(--text-secondary);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
 }
 
+/* Mini product preview thumbnails */
+.dept-preview-strip {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+  margin-bottom: var(--space-sm);
+}
+
+.dept-preview-thumb {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.55);
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.1);
+}
+
+.dept-preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bottom text content */
 .dept-card-bottom {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 .dept-micro-name {
   font-size: var(--fs-xs);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--dept-color);
+  letter-spacing: 1.2px;
+  color: rgba(255,255,255,0.75);
   font-weight: 700;
 }
 
 .dept-full-name {
   font-size: var(--fs-xl);
-  font-weight: 800;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
 
 .dept-tagline {
   font-size: var(--fs-xs);
-  color: var(--text-muted);
-  margin-bottom: 8px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 6px;
+  line-height: 1.4;
 }
 
 .dept-enter-link {
   font-size: var(--fs-xs);
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fff;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  transition: transform 0.2s;
+  transition: gap 0.2s, letter-spacing 0.2s;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 
 .dept-card:hover .dept-enter-link {
-  transform: translateX(4px);
-  color: var(--dept-color);
+  gap: 8px;
+  letter-spacing: 0.3px;
 }
 
 /* ORBIT Feature Banner */

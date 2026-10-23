@@ -20,14 +20,20 @@
 .product-card-image {
   position: relative;
   aspect-ratio: 1;
-  background: linear-gradient(135deg,
-    color-mix(in srgb, var(--dept-color, var(--accent-violet)) 8%, var(--bg-tertiary)),
-    var(--bg-tertiary)
-  );
+  background: var(--bg-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+.product-card:hover .product-card-img {
+  transform: scale(1.08);
 }
 .product-card-visual {
   display: flex;

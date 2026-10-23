@@ -26,9 +26,21 @@ export default function ProductCard({ product, showDepartment = false }) {
   return (
     <article className="product-card glass-card animate-fade-in" data-department={product.department}>
       <Link to={`/product/${product.id}`} className="product-card-link" aria-label={`View ${product.name}`}>
-        {/* Image placeholder with department color */}
-        <div className="product-card-image" style={{ '--dept-color': dept?.color || '#95818b' }}>
-          <div className="product-card-visual">
+        {/* Product image */}
+        <div className="product-card-image" style={{ '--dept-color': dept?.color || '#9E632A' }}>
+          {product.image ? (
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-card-img"
+              loading="lazy"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                if (e.target.nextElementSibling) e.target.nextElementSibling.style.display = 'flex';
+              }}
+            />
+          ) : null}
+          <div className="product-card-visual" style={{ display: product.image ? 'none' : 'flex' }}>
             <span className="product-emoji">{dept?.icon || '📦'}</span>
             <span className="product-initial">{product.name.charAt(0)}</span>
           </div>

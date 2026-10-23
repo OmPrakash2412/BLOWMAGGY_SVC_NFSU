@@ -3,7 +3,7 @@
    ========================================================= */
 import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext.jsx';
-import { DEPARTMENTS, getFeaturedProducts, ALL_PRODUCTS } from '../data/catalog.js';
+import { DEPARTMENTS, getFeaturedProducts, ALL_PRODUCTS, getProductsByDepartment } from '../data/catalog.js';
 import ProductCard from '../components/ProductCard.jsx';
 import './Home.css';
 
@@ -75,18 +75,46 @@ export default function Home() {
         <div className="departments-grid">
           {DEPARTMENTS.map(dept => {
             const count = ALL_PRODUCTS.filter(p => p.department === dept.id).length;
+            const previewProducts = getProductsByDepartment(dept.id)
+              .filter(p => p.image)
+              .slice(0, 3);
             return (
               <Link
                 key={dept.id}
                 to={`/department/${dept.id}`}
-                className="dept-card glass-card"
+                className="dept-card"
                 style={{ '--dept-color': dept.color }}
               >
-                <div className="dept-card-glow" style={{ background: dept.color }}></div>
+                {/* Full background photo */}
+                {dept.bgImage && (
+                  <img
+                    src={dept.bgImage}
+                    alt={dept.name}
+                    className="dept-card-bg-img"
+                    loading="lazy"
+                  />
+                )}
+                {/* Gradient overlay */}
+                <div className="dept-card-overlay" style={{ background: `linear-gradient(to top, ${dept.color}EE 0%, ${dept.color}88 40%, transparent 100%)` }}></div>
+
+                {/* Top row */}
                 <div className="dept-card-top">
                   <span className="dept-portal-icon">{dept.icon}</span>
                   <span className="dept-count-badge">{count} SKUs</span>
                 </div>
+
+                {/* Mini product preview strip */}
+                {previewProducts.length > 0 && (
+                  <div className="dept-preview-strip">
+                    {previewProducts.map(p => (
+                      <div key={p.id} className="dept-preview-thumb">
+                        <img src={p.image} alt={p.name} loading="lazy" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Bottom content */}
                 <div className="dept-card-bottom">
                   <span className="dept-micro-name">{dept.subtitle}</span>
                   <h3 className="dept-full-name">{dept.name}</h3>

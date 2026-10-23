@@ -67,6 +67,18 @@ export default function Department() {
     <div className="department-page animate-fade-in" style={{ '--dept-theme': dept.color }}>
       {/* Department Hero Portal Header */}
       <header className="dept-header">
+        {/* Background photo */}
+        {dept.bgImage && (
+          <img
+            src={dept.bgImage}
+            alt={dept.name}
+            className="dept-header-bg"
+            loading="eager"
+          />
+        )}
+        {/* Dark scrim overlay */}
+        <div className="dept-header-scrim"></div>
+
         <div className="container dept-header-inner">
           <div className="dept-breadcrumbs">
             <Link to="/">Multiverse</Link> <span>/</span> <span className="active-crumb">{dept.subtitle}</span>
@@ -74,7 +86,7 @@ export default function Department() {
           <div className="dept-hero-titles">
             <span className="dept-hero-icon">{dept.icon}</span>
             <div>
-              <span className="dept-badge-pill" style={{ color: dept.color, borderColor: dept.color }}>
+              <span className="dept-badge-pill" style={{ borderColor: 'rgba(255,255,255,0.6)' }}>
                 {dept.subtitle.toUpperCase()} PORTAL
               </span>
               <h1 className="dept-title">{dept.name}</h1>
