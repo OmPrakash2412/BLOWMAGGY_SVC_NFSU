@@ -45,7 +45,7 @@
 .search-main-input:focus {
   outline: none;
   border-color: var(--accent-magenta-soft);
-  box-shadow: 0 0 0 3px rgba(196, 123, 137, 0.16);
+  box-shadow: 0 0 0 3px rgba(184, 121, 57, 0.16);
 }
 
 .search-dept-pills {

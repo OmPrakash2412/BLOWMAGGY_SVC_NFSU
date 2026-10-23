@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border-color: rgba(169, 83, 105, 0.3);
+  border-color: rgba(158, 99, 42, 0.35);
 }
 
 .hero-orbit-dot {
@@ -239,8 +239,8 @@
   grid-template-columns: 1.2fr 0.8fr;
   gap: var(--space-3xl);
   align-items: center;
-  border-color: rgba(169, 83, 105, 0.22);
-  background: linear-gradient(135deg, #fffaf6 0%, #f3e8e1 100%);
+  border-color: rgba(158, 99, 42, 0.25);
+  background: linear-gradient(135deg, #FAF7F2 0%, #EFE8DC 100%);
 }
 
 .orbit-banner-left {

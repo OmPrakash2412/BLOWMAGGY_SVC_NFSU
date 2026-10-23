@@ -135,7 +135,7 @@
   outline: none;
   border-color: var(--accent-magenta-soft);
   background: var(--bg-elevated);
-  box-shadow: 0 0 0 3px rgba(196, 123, 137, 0.14);
+  box-shadow: 0 0 0 3px rgba(184, 121, 57, 0.16);
 }
 .search-input::placeholder {
   color: var(--text-muted);
@@ -161,7 +161,7 @@
   color: var(--text-secondary);
 }
 .nav-action-btn:hover {
-  background: rgba(126, 92, 76, 0.08);
+  background: rgba(100, 82, 64, 0.08);
   color: var(--text-primary);
 }
 
@@ -169,8 +169,8 @@
   width: auto;
   padding: 0 10px;
   gap: 4px;
-  background: rgba(169, 83, 105, 0.09);
-  border: 1px solid rgba(169, 83, 105, 0.22);
+  background: rgba(158, 99, 42, 0.1);
+  border: 1px solid rgba(158, 99, 42, 0.28);
   color: var(--accent-magenta);
 }
 
@@ -196,7 +196,7 @@
   color: var(--accent-cyan);
   padding: 2px 6px;
   border-radius: var(--radius-full);
-  background: rgba(99, 135, 125, 0.12);
+  background: rgba(74, 107, 97, 0.12);
 }
 
 /* ORBIT Button */
@@ -204,12 +204,12 @@
   width: auto;
   gap: 4px;
   padding: 0 12px;
-  background: rgba(169, 83, 105, 0.09);
-  border: 1px solid rgba(169, 83, 105, 0.22);
+  background: rgba(158, 99, 42, 0.1);
+  border: 1px solid rgba(158, 99, 42, 0.28);
   color: var(--accent-magenta);
 }
 .orbit-btn:hover {
-  background: rgba(169, 83, 105, 0.14);
+  background: rgba(158, 99, 42, 0.16);
   box-shadow: var(--shadow-glow-magenta);
 }
 .orbit-icon {

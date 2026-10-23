@@ -425,7 +425,7 @@
 
 .admin-avatar {
   font-size: 3rem;
-  background: rgba(196, 123, 137, 0.15);
+  background: rgba(184, 121, 57, 0.15);
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -479,8 +479,8 @@
 
 .quick-role-btn:hover {
   transform: translateY(-2px);
-  border-color: var(--accent-violet);
-  background: rgba(196, 123, 137, 0.1);
+  border-color: var(--accent-magenta);
+  background: rgba(184, 121, 57, 0.12);
 }
 
 .quick-role-btn span {

@@ -15,47 +15,49 @@
 :root {
   color-scheme: light;
 
-  /* Warm paper, rosewood, and soft botanical accents */
-  --bg-primary: #faf6f0;
-  --bg-secondary: #f1e8df;
-  --bg-tertiary: #fffdf9;
-  --bg-card: #fffaf6;
-  --bg-elevated: #f5e9e5;
-  --bg-glass: rgba(255, 253, 249, 0.9);
+  /* Light Beige, Warm Linen & Creamy Ivory Surfaces */
+  --bg-primary: #FAF7F2;        /* Elegant natural light beige */
+  --bg-secondary: #F0EAE1;      /* Soft light biscuit/linen */
+  --bg-tertiary: #FFFFFF;       /* Pure crisp white for card interiors */
+  --bg-card: #FDFBF8;           /* Clean warm ivory card background */
+  --bg-elevated: #EAE3D5;       /* Elevated neutral beige for tabs/hover */
+  --bg-glass: rgba(250, 247, 242, 0.92);
 
-  --text-primary: #382d2a;
-  --text-secondary: #75635a;
-  --text-muted: #99877b;
-  --text-inverse: #fffaf6;
+  --text-primary: #231E1A;      /* Rich deep warm espresso (crisp, high contrast) */
+  --text-secondary: #5C5248;    /* Refined warm taupe */
+  --text-muted: #8E8275;        /* Warm stone grey */
+  --text-inverse: #FFFFFF;
 
-  --accent-magenta: #a95369;
-  --accent-magenta-soft: #c47b89;
-  --accent-violet: #8b707d;
-  --accent-violet-soft: #a88991;
-  --accent-cyan: #63877d;
-  --accent-cyan-soft: #7da093;
+  /* Warm Amber, Honey Caramel, Golden Bronze & Sage Olive — ZERO PINK */
+  --accent-magenta: #9E632A;          /* Deep rich warm caramel bronze */
+  --accent-magenta-soft: #C28548;     /* Warm amber honey */
+  --accent-violet: #6E5C4E;           /* Roasted walnut */
+  --accent-violet-soft: #917E6F;      /* Muted taupe wood */
+  --accent-cyan: #4A6B61;             /* Earthy sage teal */
+  --accent-cyan-soft: #6A8E83;        /* Muted sage */
 
-  --gradient-hero: linear-gradient(120deg, #a95369 0%, #c47b89 48%, #96745e 100%);
-  --gradient-card: linear-gradient(135deg, rgba(196,123,137,0.14) 0%, rgba(150,116,94,0.08) 100%);
-  --gradient-glow: radial-gradient(ellipse at center, rgba(196,123,137,0.16) 0%, transparent 70%);
+  /* Gradient: Luxurious Warm Amber Caramel & Rich Bronze */
+  --gradient-hero: linear-gradient(125deg, #8C5320 0%, #B87939 48%, #724217 100%);
+  --gradient-card: linear-gradient(135deg, rgba(184, 121, 57, 0.1) 0%, rgba(140, 83, 32, 0.04) 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(184, 121, 57, 0.15) 0%, transparent 70%);
 
-  --border-subtle: rgba(126, 92, 76, 0.16);
-  --border-active: rgba(169, 83, 105, 0.38);
+  --border-subtle: rgba(100, 82, 64, 0.14);
+  --border-active: rgba(158, 99, 42, 0.45);
 
-  --shadow-sm: 0 2px 8px rgba(84, 57, 46, 0.06);
-  --shadow-md: 0 8px 24px rgba(84, 57, 46, 0.09);
-  --shadow-lg: 0 16px 44px rgba(84, 57, 46, 0.13);
-  --shadow-glow-magenta: 0 8px 24px rgba(169, 83, 105, 0.2);
-  --shadow-glow-violet: 0 8px 24px rgba(139, 112, 125, 0.16);
-  --shadow-glow-cyan: 0 8px 24px rgba(99, 135, 125, 0.16);
+  --shadow-sm: 0 2px 8px rgba(60, 48, 36, 0.05);
+  --shadow-md: 0 8px 24px rgba(60, 48, 36, 0.08);
+  --shadow-lg: 0 16px 44px rgba(60, 48, 36, 0.12);
+  --shadow-glow-magenta: 0 8px 24px rgba(158, 99, 42, 0.24);
+  --shadow-glow-violet: 0 8px 24px rgba(110, 92, 78, 0.16);
+  --shadow-glow-cyan: 0 8px 24px rgba(74, 107, 97, 0.16);
 
-  /* --- Department Colors --- */
-  --dept-fashion: #b46578;
-  --dept-beauty: #ce8795;
-  --dept-electronics: #63877d;
-  --dept-home: #95818b;
-  --dept-grocery: #74845f;
-  --dept-kids: #c58b58;
+  /* --- Department Colors (Tasteful warm earth/jewel tones without pink) --- */
+  --dept-fashion: #9E632A;      /* Warm cognac / terracotta */
+  --dept-beauty: #C28548;       /* Warm apricot honey */
+  --dept-electronics: #4A6B61;  /* Deep sage teal */
+  --dept-home: #786959;         /* Warm timber taupe */
+  --dept-grocery: #607548;      /* Olive harvest green */
+  --dept-kids: #D08736;         /* Golden amber */
 
   /* --- Typography --- */
   --font-display: 'Outfit', sans-serif;
@@ -114,7 +116,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: linear-gradient(180deg, #fcf8f3 0%, #f7f0e9 58%, #fbf7f2 100%);
+  background: linear-gradient(180deg, #FAF7F2 0%, #F3EDE3 55%, #FAF7F2 100%);
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
@@ -230,7 +232,7 @@ input, select, textarea {
 }
 .btn-secondary:hover {
   border-color: var(--accent-magenta-soft);
-  background: rgba(196, 123, 137, 0.1);
+  background: rgba(184, 121, 57, 0.1);
 }
 
 .btn-ghost {
@@ -271,7 +273,7 @@ input, select, textarea {
 .input-field:focus {
   outline: none;
   border-color: var(--accent-magenta-soft);
-  box-shadow: 0 0 0 3px rgba(196, 123, 137, 0.16);
+  box-shadow: 0 0 0 3px rgba(184, 121, 57, 0.16);
 }
 .input-field::placeholder {
   color: var(--text-muted);
@@ -289,7 +291,7 @@ input, select, textarea {
   color: var(--accent-violet);
 }
 .badge-magenta {
-  background: rgba(196, 123, 137, 0.14);
+  background: rgba(184, 121, 57, 0.14);
   color: var(--accent-magenta);
 }
 .badge-cyan {
@@ -311,8 +313,8 @@ input, select, textarea {
   to { opacity: 1; transform: translateY(0); }
 }
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 12px rgba(139, 112, 125, 0.12); }
-  50% { box-shadow: 0 0 22px rgba(169, 83, 105, 0.24); }
+  0%, 100% { box-shadow: 0 0 12px rgba(110, 92, 78, 0.12); }
+  50% { box-shadow: 0 0 22px rgba(158, 99, 42, 0.28); }
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }

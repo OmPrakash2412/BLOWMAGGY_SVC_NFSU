@@ -41,9 +41,9 @@
   font-size: var(--fs-xs);
   color: var(--accent-magenta);
   padding: var(--space-sm) var(--space-md);
-  background: rgba(169, 83, 105, 0.08);
+  background: rgba(158, 99, 42, 0.08);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(169, 83, 105, 0.2);
+  border: 1px solid rgba(158, 99, 42, 0.22);
 }
 .footer-links h4 {
   font-size: var(--fs-sm);
