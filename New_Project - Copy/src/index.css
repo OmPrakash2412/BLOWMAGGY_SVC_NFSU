@@ -21,7 +21,7 @@
   --bg-tertiary: #FFFFFF;       /* Pure white for card interiors */
   --bg-card: #FEFAF8;           /* Warm cream card */
   --bg-elevated: #F2E5DF;       /* Elevated blush for tabs/hover */
-  --bg-glass: rgba(253, 247, 244, 0.93);
+  --bg-glass: rgba(255, 255, 255, 0.6);
 
   --text-primary: #2A1F1C;      /* Rich warm espresso — high contrast */
   --text-secondary: #6B4F4A;    /* Warm mauve-taupe */
@@ -116,7 +116,12 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: linear-gradient(180deg, #FDF7F4 0%, #F7EBE6 55%, #FDF7F4 100%);
+  background-color: #FDF7F4;
+  background-image: 
+    linear-gradient(to right, rgba(217, 143, 163, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 143, 163, 0.08) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 0%, rgba(217, 143, 163, 0.15) 0%, transparent 70%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
@@ -188,10 +193,11 @@ input, select, textarea {
 
 /* --- Glass Card --- */
 .glass-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px rgba(192, 98, 122, 0.06);
   border-radius: var(--radius-lg);
 }
 
