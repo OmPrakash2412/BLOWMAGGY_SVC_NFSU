@@ -11,10 +11,49 @@
 
 /* Hero Section */
 .hero-section {
+  position: relative;
   padding-top: var(--space-3xl);
+  padding-bottom: var(--space-xl);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+/* Background animated video loop */
+.hero-video-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: var(--radius-xl);
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  opacity: 0.18; /* Very transparent, ethereal aesthetic feel */
+  filter: saturate(1.15) brightness(1.05) contrast(0.95);
+  mix-blend-mode: multiply;
+}
+
+.hero-video-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(245, 239, 235, 0.35) 0%, rgba(245, 239, 235, 0.95) 85%);
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;

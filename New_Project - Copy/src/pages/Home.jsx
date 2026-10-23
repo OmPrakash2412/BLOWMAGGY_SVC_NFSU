@@ -13,9 +13,23 @@ export default function Home() {
     <div className="home-page animate-fade-in">
       {/* Hero Section */}
       <section className="hero-section container">
+        {/* Background Animated Video Loop */}
+        <div className="hero-video-wrapper" aria-hidden="true">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="hero-bg-video"
+          >
+            <source src="/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-video-scrim"></div>
+        </div>
+
         <div className="hero-content">
           <div className="hero-badge">
-            <span className="badge badge-magenta">✶ YOUR COMPLETE SHOPPING DESTINATION</span>
+            <span className="badge badge-magenta">✦ CURATED SHOPPING</span>
           </div>
           <h1 className="hero-title">
             Shop Fashion, Beauty,<br />
@@ -23,7 +37,7 @@ export default function Home() {
             One Cart. Zero Hassle.
           </h1>
           <p className="hero-subtitle">
-            Everything you love — runway fashion, clean beauty, high-performance electronics, home essentials, fresh groceries, and kids’ favourites — all under one roof with a single seamless checkout.
+            Curated essentials. One seamless checkout.
           </p>
 
           <div className="hero-cta-group">
