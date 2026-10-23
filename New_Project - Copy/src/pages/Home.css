@@ -9,16 +9,21 @@
   padding-bottom: var(--space-4xl);
 }
 
-/* Hero Section */
+/* Hero Section — Full Screen Video */
 .hero-section {
   position: relative;
-  padding-top: var(--space-3xl);
-  padding-bottom: var(--space-xl);
-  border-radius: var(--radius-xl);
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-4xl) var(--space-lg) var(--space-3xl);
+  border-radius: 0;
   overflow: hidden;
 }
 
-/* Background animated video loop */
+/* Background animated video loop — Full Screen */
 .hero-video-wrapper {
   position: absolute;
   inset: 0;
@@ -27,7 +32,7 @@
   overflow: hidden;
   z-index: 0;
   pointer-events: none;
-  border-radius: var(--radius-xl);
+  border-radius: 0;
 }
 
 .hero-bg-video {
@@ -40,14 +45,20 @@
   height: auto;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  opacity: 0.58; /* Clearly visible motion and action */
+  opacity: 0.65; /* Clear, vivid motion */
   filter: saturate(1.1) brightness(1.02);
 }
 
 .hero-video-scrim {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(245, 239, 235, 0.2) 0%, rgba(245, 239, 235, 0.65) 85%);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 239, 235, 0.22) 0%,
+    rgba(245, 239, 235, 0.35) 45%,
+    rgba(245, 239, 235, 0.85) 90%,
+    #F5EFEB 100%
+  );
 }
 
 .hero-content {
@@ -67,14 +78,19 @@
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1.08;
-  text-shadow: 0 2px 16px rgba(245, 239, 235, 0.95), 0 0 6px rgba(255, 255, 255, 0.9);
+  color: #231A18;
+  text-shadow: 0 2px 18px rgba(245, 239, 235, 0.98), 0 0 8px rgba(255, 255, 255, 0.9);
 }
 
+/* Second line word color — rich deep rose burgundy matching theme */
 .hero-gradient-text {
-  background: var(--gradient-hero);
+  color: #9E2A4B;
+  background: linear-gradient(125deg, #8E1F3D 0%, #B83A5D 50%, #821A36 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 2px 12px rgba(245, 239, 235, 0.98)) drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+  font-weight: 900;
 }
 
 .hero-subtitle {

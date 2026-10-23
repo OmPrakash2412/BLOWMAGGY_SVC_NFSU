@@ -11,8 +11,8 @@ export default function Home() {
 
   return (
     <div className="home-page animate-fade-in">
-      {/* Hero Section */}
-      <section className="hero-section container">
+      {/* Hero Section — Full Screen Video */}
+      <section className="hero-section">
         {/* Background Animated Video Loop */}
         <div className="hero-video-wrapper" aria-hidden="true">
           <video
