@@ -82,10 +82,10 @@
   text-shadow: 0 2px 18px rgba(245, 239, 235, 0.98), 0 0 8px rgba(255, 255, 255, 0.9);
 }
 
-/* Second line word color — rich deep rose burgundy matching theme */
+/* Second line word color — rich dark slate obsidian with subtle tech depth */
 .hero-gradient-text {
-  color: #9E2A4B;
-  background: linear-gradient(125deg, #8E1F3D 0%, #B83A5D 50%, #821A36 100%);
+  color: #0F172A;
+  background: linear-gradient(125deg, #090D16 0%, #1E293B 50%, #0F172A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
